@@ -1,0 +1,14 @@
+[
+  {
+    "firstname": "Juan",
+    "lastname": "Perez",
+    "age": 45,
+    "course": "Desarrollo Backend"
+  },
+  {
+    "firstname": "Pedro",
+    "lastname": "Gomez",
+    "age": 32,
+    "course": "Desarrollo Frontend"
+  }
+]
