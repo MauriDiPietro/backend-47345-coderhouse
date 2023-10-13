@@ -1,0 +1,16 @@
+[
+  {
+    "firstname": "Juan",
+    "lastname": "Perez",
+    "username": "jperez",
+    "password": "94ada1ff09850fec334387a949cfc405ae70e837b0f0daa73d6f519a04952d4d",
+    "salt": "L��\u001d�s�-�;�1��ΰ�\u0010���)��:��E>;��2\u001b�A�=�:A�8�Y=V�\b#9\r��H\u000b�/��\u001c��<�u#c\tV���n\b����¡`�í���O�\n���d&�'pl\"(���o!\u001e�0:��MMgxt��'�a��g�s"
+  },
+  {
+    "firstname": "Pedro",
+    "lastname": "Gomez",
+    "username": "pgomez",
+    "password": "9ce3b8f7ae0018997c6571d00c484f7e4777b2adbd4b03c5520149486b865e26",
+    "salt": "�����.�&c@B\u0007�>P�Wª\fW\u0010^s�x�\u0006\u00192����lL�U\u0015\u000e(�\u000b����Y�\u000b\u0000���SW�����#\u0002�����R%��H\u0017\u0001\u001a�r菛wA�\t�.Zm�4@O[���%b�z_\t���$\u000b0J�%�Ώ���)L��^~O���"
+  }
+]
