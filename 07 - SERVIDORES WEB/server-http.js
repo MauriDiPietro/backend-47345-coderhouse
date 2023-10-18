@@ -13,6 +13,9 @@ const server = http.createServer((req, res)=>{
     if(req.url === '/users'){
         res.end(JSON.stringify(users));
     }
+    if(req.url === '/home'){
+        res.end('Bienvenido');
+    }
 });
 
 server.listen(8080, ()=>console.log('Server ok en puerto 8080'))

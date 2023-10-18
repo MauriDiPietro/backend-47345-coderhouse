@@ -2,12 +2,16 @@
   "name": "07---servidores-web",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server-express.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch ."
+    "dev:http": "node --watch server-http.js",
+    "dev:express": "node --watch ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
