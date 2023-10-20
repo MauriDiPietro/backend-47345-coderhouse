@@ -17,6 +17,16 @@ export class UserManager {
     }
   }
 
+  async getUsersByLimit(limit){
+    try {
+        const users = await this.getUsers();
+        if(!limit || limit >= users.length) return users;
+        else return users.slice(0, limit);
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
   async #getMaxId() {
     let maxId = 0;
     const users = await this.getUsers();

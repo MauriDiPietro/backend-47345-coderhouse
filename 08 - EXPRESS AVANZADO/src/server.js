@@ -9,8 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/users", async (req, res) => {
   try {
+    const { limit } = req.query;
     const users = await userManager.getUsers();
-    res.status(200).json(users);
+    if(!limit) res.status(200).json(users);
+    else {
+        const usersByLimit = await userManager.getUsersByLimit(limit);
+        res.status(200).json(usersByLimit);
+    }
   } catch (error) {
     res.status(500).json(error.message);
   }
