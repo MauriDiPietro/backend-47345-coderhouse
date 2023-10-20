@@ -83,7 +83,15 @@ export class UserManager {
         const users = await this.getUsers();    // [{},{}]
         const index = users.findIndex(user => user.id === id);  // posición ó -1
         if(index === -1) return false;
-        else users[index] = { ...obj, id };
+        else{
+            const userUpdt = { ...obj, id };
+            userUpdt.salt = crypto.randomBytes(128).toString();
+            userUpdt.password = crypto
+                .createHmac("sha256", userUpdt.salt)
+                .update(userUpdt.password)
+                .digest("hex");
+            users[index] = userUpdt;
+        }
         await fs.promises.writeFile(this.path, JSON.stringify(users));
     } catch (error) {
         console.log(error);
