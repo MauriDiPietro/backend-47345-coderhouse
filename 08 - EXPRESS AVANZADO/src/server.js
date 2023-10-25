@@ -24,16 +24,12 @@ app.get("/users", async (req, res) => {
 app.post("/users", async (req, res) => {
   try {
     // console.log(req.body);
-    // const { firstname, lastname, username, password } = req.body;
-    const user = { ...req.body };
-    // console.log(user);
-    const userCreated = await userManager.createUser(user);
-    const { id, firstname, lastname, username } = userCreated;
+    const userCreated = await userManager.createUser(req.body);
     const userResponse = {
-      id,
-      firstname,
-      lastname,
-      username,
+      id: userCreated.id,
+      firstname: userCreated.firstname,
+      lastname: userCreated.lastname,
+      username: userCreated.username,
     };
     res.status(200).json(userResponse);
   } catch (error) {
