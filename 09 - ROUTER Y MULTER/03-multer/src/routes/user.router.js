@@ -6,6 +6,7 @@ const router = Router();
 
 import { UserManager } from "../managers/user.manager.js";
 import { userValidator } from "../middlewares/userValidator.js";
+import { uploader } from "../middlewares/multer.js";
 const userManager = new UserManager("./src/data/users.json");
 
 router.get("/", async (req, res) => {
@@ -38,6 +39,22 @@ router.post("/", async (req, res) => {
     res.status(500).json(error.message);
   }
 });
+
+router.post('/img', uploader.single('image'), async(req, res)=>{
+  const user = req.body;
+  console.log(req.file);
+  user.img = req.file.path;
+  const userCreated = await userManager.createUser(user);
+  const userResponse = {
+    id: userCreated.id,
+    firstname: userCreated.firstname,
+    lastname: userCreated.lastname,
+    username: userCreated.username,
+    role: userCreated.role,
+    img: userCreated.img
+  };
+  res.status(200).json(userResponse);
+})
 
 router.post("/admin", userValidator, async (req, res) => {
   try {
