@@ -1,0 +1,24 @@
+/* --------------------- ver bases de datos disponibles --------------------- */
+
+//! > show databases
+//! > show dbs
+
+/* --------------------------- crear base de datos -------------------------- */
+
+//! > use ecommerce
+
+/* ------------------------ para crear una colección ------------------------ */
+
+//! > db.createCollection('test')
+//! > show dbs ---> ya tenemos la base de datos ecommerce
+
+/* ----------------------- para renombrar la colección ---------------------- */
+
+//! > db.test.renameCollection('products')
+
+/* --------------- para insertar un documento en una colección -------------- */
+
+//! > db.products.insertOne({name: 'prod1', price: 500})
+
+//! > const array = [{name: 'prod2', price: 600},{name: 'prod3', price: 300},{name: 'prod4', price: 500}]
+//! > db.products.insertMany(array)
