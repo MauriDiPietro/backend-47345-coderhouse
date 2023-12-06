@@ -62,8 +62,8 @@ export const addProdToCart = async (cartId, prodId) => {
     const existProd = await prodDao.getById(prodId);
     console.log("existProd-->", existProd);
     if (!existProd) return false;
-
-    return await cartDao.addProdToCart(cartId, prodId);
+      //SI EXISTE, AUMENTAR quantity++
+    return await cartDao.addProdToCart(existCart, prodId);
   } catch (error) {
     console.log(error);
   }
@@ -106,7 +106,7 @@ export const removeProdToCart = async (cartId, prodId) => {
       const existCart = await getById(cartId);
       console.log("existCart-->", existCart);
       if (!existCart) return false;
-  
+
       return await cartDao.clearCart(existCart);
     } catch (error) {
       console.log(error);
