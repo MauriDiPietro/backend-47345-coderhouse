@@ -1,0 +1,19 @@
+{
+  "name": "18---mongo-avaznzado---parte-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.2.0",
+    "mongoose-paginate-v2": "^1.7.4",
+    "morgan": "^1.10.0"
+  }
+}
