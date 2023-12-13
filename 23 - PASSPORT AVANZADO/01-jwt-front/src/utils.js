@@ -3,10 +3,10 @@ import { fileURLToPath } from 'url';
 export const __dirname = dirname(fileURLToPath(import.meta.url));
 /* ------------------------------------ - ----------------------------------- */
 // import bcrypt from 'bcrypt';
-import bcryptjs from 'bcryptjs';
+import bcryptjs from 'bcryptjs'
 
 /**
- * funcion que realiza el encriptado de contraseña a través de bcrypt con el método hashSync. 
+ * funcion que realiza el encriptado de contraseña a través de bcryptjs con el método hashSync. 
  * Recibe password sin encriptar,
  * retorna password encriptada
  * @param password tipo string

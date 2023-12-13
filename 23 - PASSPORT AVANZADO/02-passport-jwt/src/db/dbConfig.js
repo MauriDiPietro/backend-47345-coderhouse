@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 try {
   await mongoose.connect(
-    'mongodb://127.0.0.1:27017/coder47345'
+    'mongodb://localhost:27017/coderhouse'
   )
   console.log('Conectado a la base de datos')
 } catch (error) {
