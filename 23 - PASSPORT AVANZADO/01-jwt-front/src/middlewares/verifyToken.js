@@ -1,8 +1,11 @@
 import UserDao from "../daos/user.dao.js";
 const userDao = new UserDao();
+import jwt from 'jsonwebtoken'
+import { PRIVATE_KEY } from "../jwt/auth.js";
 
 export const verifyToken = async (req, res, next) => {
   const authHeader = req.get("Authorization");
+  // const cookieToken = req.cookies.token
   if (!authHeader) return res.status(401).json({ msg: "Unauthorized" });
   try {
     const token = authHeader.split(" ")[1];

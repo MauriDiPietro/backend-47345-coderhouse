@@ -17,5 +17,19 @@ form.onsubmit = (e) => {
     }).then((response) => response.json())
     .then((response) => {
         console.log(response); //token
+        localStorage.setItem('token', response)
+    })
+}
+
+boton.onclick = () => {
+    fetch('http://localhost:8080/users/private', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+    }).then((response) => response.json())
+    .then((response) => {
+        console.log(response); //DATOS DEL USUARIO
     })
 }

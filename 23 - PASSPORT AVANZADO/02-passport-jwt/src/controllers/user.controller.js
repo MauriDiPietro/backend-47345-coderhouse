@@ -24,11 +24,13 @@ export const login = async(req, res, next)=>{
        const user = await userDao.loginUser({email, password});
        if(!user){
         res.json({msg: 'invalid credentials'});
+       } else {
+           const access_token = generateToken(user)
+           res
+                .cookie('token', access_token, { httpOnly: true })
+                // .header('Authorization', access_token)
+                .json({msg: 'Login OK', access_token})
        }
-       const access_token = generateToken(user)
-       res
-            .header('Authorization', access_token)
-            .json({msg: 'Login OK', access_token})
     } catch (error) {
         next(error);
     }

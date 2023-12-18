@@ -51,9 +51,11 @@ export const loginFront = async(req, res, next) => {
   try {
     const { email, password } = req.body;
     const user = await userDao.loginUser({email, password})
-    if(!user) res.json({msg: 'Invalid credentials'})
-    const access_token = generateToken(user);
-    res.json(access_token)
+    if(!user) {res.json({msg: 'Invalid credentials'})}
+    const access_token = generateToken(user)
+    res
+      .cookie('token', access_token, { httpOnly: true })
+      .json(access_token)
   } catch (error) {
     next(error)
   }
