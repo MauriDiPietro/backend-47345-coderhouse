@@ -1,0 +1,18 @@
+{
+  "name": "fork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:bloqueante": "node src/index-bloqueante.js",
+    "start:no:bloqueante": "node src/index-no-bloqueante.js",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

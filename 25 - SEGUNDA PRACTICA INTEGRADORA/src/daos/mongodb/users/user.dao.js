@@ -25,7 +25,7 @@ export default class UserMongoDao extends MongoDao {
   async login(user) {
     try {
       const { email, password } = user;
-      const existUser = this.getByEmail(email);
+      const existUser = await this.getByEmail(email);
       if (existUser) {
         const passValid = isValidPassword(existUser, password);
         if (!passValid) return false;
