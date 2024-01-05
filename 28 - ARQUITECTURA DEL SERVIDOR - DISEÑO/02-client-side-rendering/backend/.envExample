@@ -1,0 +1,9 @@
+DB_NAME=tasks
+DB_USER=root 
+DB_PASS=
+HOST=localhost
+PORT=8080
+REACT_APP=http://localhost:3000
+SECRET=sdfsdf))()JJKJkjklmflg
+ACCESS_TOKEN=token
+REFRESH_TOKEN=token_refresh
