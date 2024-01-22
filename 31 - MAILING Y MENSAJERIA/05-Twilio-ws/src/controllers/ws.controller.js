@@ -15,3 +15,26 @@ export const sendWS = async(req,res)=>{
         console.log(error);
     }
 }
+
+const sendMessageToClient = async (dest, msg) => {
+    const message = {
+        body: msg,
+        from: process.env.CEL,
+        to: dest
+    };
+    await twilioClient.messages.create(message);
+}
+
+export const responseWS = async(req, res)=>{
+    try {
+        // console.log(req.body);
+        if(req.body.Body.toUpperCase().includes('HOLA')){
+            await sendMessageToClient(req.body.From, `Hola ${req.body.ProfileName}!, ¿Cuál es tu consulta?`)
+        }
+        if(req.body.Body.toUpperCase().includes('CHAU')){
+            await sendMessageToClient(req.body.From, `Chau ${req.body.ProfileName}!, Nos vemos pronto!`)
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
