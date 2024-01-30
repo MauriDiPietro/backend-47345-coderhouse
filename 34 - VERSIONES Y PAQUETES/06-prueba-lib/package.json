@@ -1,0 +1,15 @@
+{
+  "name": "06-prueba-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "super-calc-47345": "^2.0.0"
+  }
+}
