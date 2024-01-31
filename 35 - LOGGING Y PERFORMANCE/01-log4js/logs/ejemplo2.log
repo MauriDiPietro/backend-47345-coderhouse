@@ -1,0 +1,12 @@
+[2024-01-30T20:59:45.676] [TRACE] default - Imprimo trace
+[2024-01-30T20:59:45.681] [DEBUG] default - Imprimo debug
+[2024-01-30T20:59:45.681] [INFO] default - Imprimo info
+[2024-01-30T20:59:45.681] [WARN] default - Imprimo warn
+[2024-01-30T20:59:45.681] [ERROR] default - Imprimo error
+[2024-01-30T20:59:45.682] [FATAL] default - Imprimo fatal
+[2024-01-30T21:00:58.548] [TRACE] default - Imprimo trace
+[2024-01-30T21:00:58.550] [DEBUG] default - Imprimo debug
+[2024-01-30T21:00:58.550] [INFO] default - Imprimo info
+[2024-01-30T21:00:58.550] [WARN] default - Imprimo warn
+[2024-01-30T21:00:58.550] [ERROR] default - Imprimo error
+[2024-01-30T21:00:58.551] [FATAL] default - Imprimo fatal

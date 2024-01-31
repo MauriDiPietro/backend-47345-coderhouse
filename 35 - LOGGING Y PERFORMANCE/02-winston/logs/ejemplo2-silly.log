@@ -1,0 +1,7 @@
+{"level":"silly","message":"imprimimos silly"}
+{"level":"debug","message":"imprimimos debug"}
+{"level":"verbose","message":"imprimimos verbose"}
+{"level":"info","message":"imprimimos info"}
+{"level":"http","message":"imprimimos http"}
+{"level":"warn","message":"imprimimos warn"}
+{"level":"error","message":"imprimimos error"}

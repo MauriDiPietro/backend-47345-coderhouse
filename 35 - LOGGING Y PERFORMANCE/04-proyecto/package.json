@@ -1,0 +1,19 @@
+{
+  "name": "03-ejemplo-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.10.0",
+    "winston-mongodb": "^5.1.1"
+  }
+}

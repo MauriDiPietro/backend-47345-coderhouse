@@ -1,0 +1,4 @@
+[2024-01-30T21:03:49.773] [INFO] default - Imprimo info
+[2024-01-30T21:03:49.781] [WARN] default - Imprimo warn
+[2024-01-30T21:03:49.782] [ERROR] default - Imprimo error
+[2024-01-30T21:03:49.782] [FATAL] default - Imprimo fatal
