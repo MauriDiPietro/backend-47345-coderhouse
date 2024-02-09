@@ -9,8 +9,8 @@ import 'dotenv/config'
 
 let userDao;
 let productDao;
-// let persistence = process.argv[2];
-let persistence = process.env.PERSISTENCE;
+let persistence = process.argv[2];
+// let persistence = process.env.PERSISTENCE;
 
 switch (persistence) {
   case "mongo":

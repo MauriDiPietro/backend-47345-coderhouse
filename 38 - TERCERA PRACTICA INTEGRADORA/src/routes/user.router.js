@@ -5,8 +5,6 @@ const controller = new UserController();
 
 const router = Router();
 
-// router.get('/search/:id', controller.getById);
-
 router.post('/register', controller.register);
 
 router.post('/login', controller.login);
@@ -14,6 +12,12 @@ router.post('/login', controller.login);
 router.get('/profile', checkAuth, controller.profile);
 
 // router.get('/:id', controller.getUserById);
+
+// BOTON DE RESTABLECER PASSWORD --> ENVIA MAIL AL USUARIO (TIENE QUE ESTAR LOGUEADO)
+router.post('/reset-pass', checkAuth, controller.resetPass);
+
+// ENDPOINT QUE ACTUALIZA CONTRASEÑA
+router.put('/new-pass', checkAuth, controller.updatePass);
 
 export default router;
 
