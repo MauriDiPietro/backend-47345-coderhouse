@@ -1,0 +1,47 @@
+paths:
+  /users/login:
+    post:
+      tags: 
+      - Users
+      summary: Login de usuario  
+      requestBody:  
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/parameters/schemas/login'
+        required: true
+      responses:  
+        200:
+          description: Login success
+          content: 
+            application/json:
+              schema: 
+                $ref: '#/components/schema/Users/User'
+  /users/profile:
+    get:
+      tags:
+      - News
+      summary: Datos del usuario autenticado
+      responses:
+        200:
+          description: Datos del usuario
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Users/User/profile'
+      security:
+        - BearerAuth: []
+  /users/profile-cookies:
+    get:
+      tags:
+      - News
+      summary: Datos del usuario autenticado
+      responses:
+        200:
+          description: Datos del usuario
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Users/User/profile'  
+
+ 

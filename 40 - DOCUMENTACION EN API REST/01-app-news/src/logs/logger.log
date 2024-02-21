@@ -1,0 +1,62 @@
+[2024-02-20T22:02:35.936] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:02:37.850] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:04:03.848] [INFO] default - POST /news
+[2024-02-20T22:04:10.467] [INFO] default - POST /news
+[2024-02-20T22:04:10.656] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "¡No rompimos la app!" }
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (events.js:375:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: '¡No rompimos la app!' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-02-20T22:04:43.976] [INFO] default - POST /news
+[2024-02-20T22:04:55.160] [INFO] default - POST /news
+[2024-02-20T22:04:55.352] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "¡No rompimos la appsdsadasdadsa!" }
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (events.js:375:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\40 - DOCUMENTACION EN API REST\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: '¡No rompimos la appsdsadasdadsa!' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2024-02-20T22:06:15.333] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:06:15.388] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:06:26.986] [INFO] default - POST /news
+[2024-02-20T22:06:44.160] [INFO] default - POST /news
+[2024-02-20T22:08:03.821] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:08:03.850] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:08:59.033] [INFO] default - POST /news
+[2024-02-20T22:11:29.984] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:11:30.032] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:12:26.358] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:12:26.419] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:14:31.794] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:14:31.841] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:15:25.902] [INFO] default - GET /news
+[2024-02-20T22:18:21.004] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:18:21.052] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:22:40.687] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:22:40.712] [INFO] default - Conectado a MongoDB!
+[2024-02-20T22:22:49.222] [INFO] default - GET /news
+[2024-02-20T22:23:18.361] [INFO] default - GET /news/65d54d2bc797e511f30c14d7
+[2024-02-20T22:26:15.242] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-20T22:26:15.271] [INFO] default - Conectado a MongoDB!

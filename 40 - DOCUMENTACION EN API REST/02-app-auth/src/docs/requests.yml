@@ -1,0 +1,23 @@
+components:
+  parameters:
+    schemas:
+      login: 
+        type: object
+        required:   
+          - email
+          - password
+        properties:  
+          email:
+            type: string
+            description: Email del usuario 
+          password:
+            type: string
+            description: Password del usuario
+        example:
+          email: juan@mail.com
+          password: abc123def456
+  securitySchemes:
+    BearerAuth: 
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

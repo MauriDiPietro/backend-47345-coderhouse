@@ -1,0 +1,78 @@
+components:
+  schema:
+    News:
+      PostNew:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id de la noticia
+          title:
+            type: string
+            description: Título de la noticia
+          body:
+            type: string
+            description: Cuerpo de la noticia
+          author:
+            type: string
+            description: Autor de la noticia
+          image:
+            type: string
+            description: Imagen de la noticia  
+          date:
+            type: date
+            description: Fecha de publicación de la noticia
+        example:
+          id: 6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b
+          title: ¡Argentina Campeón del Mundo!
+          body: Argentina se consagró campeoón del mundo tras vencer a Francia....
+          author: Luis Mera
+          image: 'http://sdfsdfsdf.com/sdfsdf.jpg'  
+          date: 20/02/2024  
+      GetAllNews:
+        type: array
+        items:
+          properties:
+            id:
+              type: string
+              description: Id de la noticia
+            title:
+              type: string
+              description: Título de la noticia
+            body:
+              type: string
+              description: Cuerpo de la noticia
+            author:
+              type: string
+              description: Autor de la noticia
+            image:
+              type: string
+              description: Imagen de la noticia  
+            date:
+              type: date
+              description: Fecha de publicación de la noticia
+          example:
+            id: 6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b
+            title: ¡Argentina Campeón del Mundo!
+            body: Argentina se consagró campeoón del mundo tras vencer a Francia....
+            author: Luis Mera
+            image: 'http://sdfsdfsdf.com/sdfsdf.jpg'  
+            date: 20/02/2024  
+      ValidationSchemaError:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Validation schema error
+      NotFound:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Error de servidor
+      ErrorGetById:
+        type: object
+        properties:
+          message:
+            type: string
+            description: No se encontró el id en la base de datos

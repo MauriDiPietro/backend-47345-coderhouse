@@ -1,0 +1,30 @@
+components:
+  parameters:
+    schemas:
+      BodyNewPost:
+        type: object
+        required:
+          - title
+          - body
+          - author
+          - image
+        properties:
+          title:
+            type: string
+            description: Título de la noticia
+          body:
+            type: string
+            description: Cuerpo de la noticia
+          author:
+            type: string
+            description: Autor de la noticia
+          image:
+            type: string
+            description: Imagen de la noticia
+        example:
+          title: ¡Argentina Campeón del Mundo!
+          body: Argentina se consagró campeoón del mundo tras vencer a Francia....
+          author: Luis Mera
+          image: 'http://sdfsdfsdf.com/sdfsdf.jpg'    
+
+
