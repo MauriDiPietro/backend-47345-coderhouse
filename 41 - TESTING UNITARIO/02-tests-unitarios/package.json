@@ -1,0 +1,33 @@
+{
+  "name": "02-tests-unitarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "node --watch ./src/server.js",
+    "test:assert": "mocha ./src/test/news.dao.assert.test.js",
+    "test:chai": "mocha ./src/test/news.dao.chai.test.js",
+    "test:node": "node ./src/test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "log4js": "^6.7.1",
+    "mongoose": "^6.9.1",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.1",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0"
+  }
+}

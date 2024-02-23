@@ -1,0 +1,23 @@
+{
+  "name": "02-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "mocha src/tests/tareas.test.js",
+    "test:all": "mocha src/tests --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}
