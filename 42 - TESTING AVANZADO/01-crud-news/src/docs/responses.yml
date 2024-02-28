@@ -1,0 +1,81 @@
+components:
+  schema:
+    News:
+      New:
+        type: object
+        properties:
+          id:
+            type: string
+            description: Id de la noticia.
+          title:
+            type: string
+            description: Title de la noticia.
+          body:
+            type: string
+            description: Body de la noticia.
+          Author:
+            type: string
+            description: Author de la noticia.
+          Image:
+            type: string
+            description: Image de la noticia.
+          Date:
+            type: date
+            description: Fecha de publicación de la noticia.
+        example:
+          id: 6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b
+          title: Argentina Campeón del mundo!
+          body: Argentina se consagró campeon el mundo
+          Author: Gonzalo Bonadeo
+          Image: http://sdfsdf.com/sdfsdf.jpg
+          Date: 22/02/2023
+      getAllNews:
+        type: array
+        items: 
+       
+          properties:
+            id:
+              type: string
+             
+              example: 6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b
+            title:
+              type: string
+              example: ¡Argentina campeón del mundo!
+            body:
+              type: string
+              example: Argentina se consagró campeón del mundo tras vencer a Francia por penales.
+            Author: 
+              type: string
+              example: Gonzalo Bonadeo
+            Image:
+              type: string
+              example: http://sdfsdf.com/sdsd.jpg   
+      ValidationSchemaError:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Validation schema error.
+        example:
+          message: Validation schema error.  
+      NotFound:
+        type: object
+        properties:
+          message:
+            type: string
+            description: Error de servidor.
+        example:
+          message: error de servidor.   
+      ErrorGetById:
+        type: object
+        properties:
+          message:
+            type: string
+            description: No se encontró el id en la base de datos.
+        example:
+          message: No se encontró el id 564fg65d4fgdf4g564 en la base de datos.  
+      DeleteById:
+        type: string
+        description: noticia eliminada
+        example: noticia eliminada     
+

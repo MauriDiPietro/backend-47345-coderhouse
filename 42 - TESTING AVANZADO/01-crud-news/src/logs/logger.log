@@ -1,0 +1,1855 @@
+[2023-02-13T22:28:12.919] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-13T22:28:14.717] [INFO] default - Conectado a MongoDB!
+[2023-02-13T22:28:40.988] [INFO] default - POST /news
+[2023-02-13T22:28:41.013] [FATAL] default - Error: News validation failed: title: this title is short
+    at ValidationError.inspect (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/mongoose/lib/error/validation.js:50:26)
+    at formatValue (node:internal/util/inspect:806:19)
+    at inspect (node:internal/util/inspect:365:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2273:40)
+    at Object.format (node:internal/util/inspect:2130:10)
+    at basicLayout (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/log4js/lib/layouts.js:65:52)
+    at app (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/log4js/lib/appenders/file.js:98:23)
+    at /media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/log4js/lib/log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/log4js/lib/log4js.js:42:21) {
+  errors: {
+    title: ValidatorError: this title is short
+        at validate (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/mongoose/lib/schematype.js:1346:13)
+        at SchemaType.doValidate (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/mongoose/lib/schematype.js:1330:7)
+        at /media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/mongoose/lib/document.js:2905:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'minlength',
+      path: 'title',
+      value: 'new',
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2023-02-13T22:29:06.428] [INFO] default - POST /news
+[2023-02-13T22:29:13.793] [INFO] default - POST /news
+[2023-02-13T22:29:17.794] [INFO] default - POST /news
+[2023-02-13T22:29:25.446] [INFO] default - GET /news/63eae3ed4a85988aa757897a
+[2023-02-13T22:29:29.402] [INFO] default - GET /news
+[2023-02-13T22:29:36.333] [INFO] default - GET /news
+[2023-02-13T22:30:08.714] [INFO] default - GET /news
+[2023-02-13T22:30:37.352] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-13T22:30:39.065] [INFO] default - Conectado a MongoDB!
+[2023-02-13T22:30:40.342] [INFO] default - GET /news
+[2023-02-13T22:30:40.343] [FATAL] default - TypeError: NewsModel.findAll is not a function
+    at DaoMongo.getAllNews (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO%20DE%20SERVIDOR%20COMPLETO/02-app-fullstack/backend/src/persistence/DAOS/mongo/news.mongo.dao.js:20:46)
+    at NewsRepository.getAllNews (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO%20DE%20SERVIDOR%20COMPLETO/02-app-fullstack/backend/src/persistence/repository/news.repository.js:10:41)
+    at getAllNews (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO%20DE%20SERVIDOR%20COMPLETO/02-app-fullstack/backend/src/services/news.services.js:11:43)
+    at getAllNewsCtr (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO%20DE%20SERVIDOR%20COMPLETO/02-app-fullstack/backend/src/controllers/news.controllers.js:5:27)
+    at Layer.handle [as handle_request] (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/layer.js:95:5)
+    at next (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/layer.js:95:5)
+    at /media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/media/mauri/DATOS/CODERHOUSE/BACKEND/backend-32155-coderhouse/41-DESARROLLO DE SERVIDOR COMPLETO/02-app-fullstack/backend/node_modules/express/lib/router/index.js:346:12)
+[2023-02-13T22:31:13.633] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-13T22:31:15.268] [INFO] default - Conectado a MongoDB!
+[2023-02-13T22:31:16.497] [INFO] default - GET /news
+[2023-02-13T22:31:35.031] [INFO] default - POST /news
+[2023-02-13T22:31:43.554] [INFO] default - POST /news
+[2023-02-13T22:31:43.896] [INFO] default - POST /news
+[2023-02-13T22:31:44.322] [INFO] default - POST /news
+[2023-02-13T22:32:17.753] [INFO] default - GET /news/63eae48014524041e74be18e
+[2023-02-13T22:32:28.102] [INFO] default - GET /news
+[2023-02-13T22:32:50.305] [INFO] default - POST /news
+[2023-02-13T22:32:52.593] [INFO] default - GET /news
+[2023-02-15T12:06:35.344] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:06:35.370] [INFO] default - GET /news
+[2023-02-15T12:07:20.670] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:07:22.447] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:07:28.515] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:07:28.530] [INFO] default - GET /news
+[2023-02-15T12:08:00.018] [INFO] default - GET /news
+[2023-02-15T12:08:39.849] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:08:41.606] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:08:43.200] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:08:50.160] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:08:51.762] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:11:31.447] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:11:31.462] [INFO] default - GET /news
+[2023-02-15T12:12:23.311] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:12:25.052] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:12:32.415] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:12:34.009] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:12:39.789] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:12:41.395] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:12:43.226] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:12:44.816] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:12:45.605] [INFO] default - GET /news
+[2023-02-15T12:13:19.344] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:13:19.366] [INFO] default - GET /news
+[2023-02-15T12:13:32.875] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:13:32.896] [INFO] default - GET /news
+[2023-02-15T12:18:15.496] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:18:15.516] [INFO] default - GET /news
+[2023-02-15T12:18:17.271] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:19:30.771] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:19:30.791] [INFO] default - GET /news
+[2023-02-15T12:19:32.485] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:19:47.959] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:19:48.036] [INFO] default - GET /news
+[2023-02-15T12:19:49.556] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:23:51.673] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:23:51.696] [INFO] default - GET /news
+[2023-02-15T12:23:53.367] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:33:05.619] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:33:07.366] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:40:09.693] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:40:11.416] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:41:24.298] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:41:26.042] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:41:27.503] [INFO] default - POST /news
+[2023-02-15T12:42:47.503] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:42:49.230] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:42:50.287] [INFO] default - POST /news
+[2023-02-15T12:43:19.176] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:43:20.793] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:43:21.860] [INFO] default - POST /news
+[2023-02-15T12:48:45.754] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:48:47.577] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:48:48.654] [INFO] default - POST /news
+[2023-02-15T12:53:06.537] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T12:53:08.287] [INFO] default - Conectado a MongoDB!
+[2023-02-15T12:53:09.378] [INFO] default - POST /news
+[2023-02-15T13:51:49.681] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T13:51:51.409] [INFO] default - Conectado a MongoDB!
+[2023-02-15T13:51:52.733] [INFO] default - POST /news
+[2023-02-15T13:53:54.014] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T13:53:55.756] [INFO] default - Conectado a MongoDB!
+[2023-02-15T13:53:56.835] [INFO] default - POST /news
+[2023-02-15T13:57:00.058] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T13:57:01.801] [INFO] default - Conectado a MongoDB!
+[2023-02-15T13:57:02.864] [INFO] default - POST /news
+[2023-02-15T13:57:49.082] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T13:57:50.701] [INFO] default - Conectado a MongoDB!
+[2023-02-15T13:57:51.769] [INFO] default - POST /news
+[2023-02-15T13:59:16.860] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T13:59:18.605] [INFO] default - Conectado a MongoDB!
+[2023-02-15T13:59:19.681] [INFO] default - POST /news
+[2023-02-15T13:59:20.336] [INFO] default - GET /news
+[2023-02-15T14:00:40.956] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:00:42.699] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:00:43.767] [INFO] default - POST /news
+[2023-02-15T14:00:44.429] [INFO] default - GET /news
+[2023-02-15T14:01:31.316] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:01:32.932] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:01:34.041] [INFO] default - POST /news
+[2023-02-15T14:01:34.784] [INFO] default - GET /news
+[2023-02-15T14:02:33.717] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:02:35.425] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:02:36.496] [INFO] default - POST /news
+[2023-02-15T14:02:37.287] [INFO] default - GET /news
+[2023-02-15T14:03:20.547] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:03:22.269] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:03:23.442] [INFO] default - POST /news
+[2023-02-15T14:03:24.116] [INFO] default - GET /news
+[2023-02-15T14:04:12.025] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:04:13.878] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:04:14.969] [INFO] default - POST /news
+[2023-02-15T14:04:15.655] [INFO] default - GET /news
+[2023-02-15T14:04:56.036] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:04:57.669] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:04:58.730] [INFO] default - POST /news
+[2023-02-15T14:04:59.602] [INFO] default - GET /news
+[2023-02-15T14:17:07.867] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:17:09.628] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:17:11.005] [INFO] default - POST /news
+[2023-02-15T14:17:11.655] [INFO] default - GET /news
+[2023-02-15T14:17:12.260] [INFO] default - PUT /news/63ed1398b961194c672c1f13
+[2023-02-15T14:17:45.514] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:17:47.135] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:17:48.213] [INFO] default - POST /news
+[2023-02-15T14:17:48.909] [INFO] default - GET /news
+[2023-02-15T14:17:49.514] [INFO] default - PUT /news/63ed13bdf77ed6103d180735
+[2023-02-15T14:18:42.576] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:18:44.305] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:18:45.374] [INFO] default - POST /news
+[2023-02-15T14:18:46.024] [INFO] default - GET /news
+[2023-02-15T14:18:46.652] [INFO] default - PUT /news/63ed13f64115b539d1989eaa
+[2023-02-15T14:27:06.942] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:27:08.689] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:27:09.755] [INFO] default - POST /news
+[2023-02-15T14:27:10.416] [INFO] default - GET /news
+[2023-02-15T14:27:11.016] [INFO] default - PUT /news/63ed15ee28d800c7d4e7b86a
+[2023-02-15T14:27:11.767] [INFO] default - DELETE /news/63ed15ef28d800c7d4e7b86f
+[2023-02-15T14:27:31.247] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:27:46.470] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:27:48.063] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:27:49.300] [INFO] default - GET /news
+[2023-02-15T14:27:50.922] [INFO] default - GET /news
+[2023-02-15T14:28:13.600] [INFO] default - POST /news
+[2023-02-15T14:29:12.115] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:29:13.881] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:29:17.848] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:29:19.451] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:29:34.178] [INFO] default - PUT /news/63ed162d20cced1750ae3109
+[2023-02-15T14:29:40.908] [INFO] default - PUT /news/63ed162d20cced1750ae3109
+[2023-02-15T14:29:53.095] [INFO] default - DELETE /news/63ed162d20cced1750ae3109
+[2023-02-15T14:30:22.163] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:30:23.896] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:30:25.616] [INFO] default - DELETE /news/63ed162d20cced1750ae3109
+[2023-02-15T14:30:37.745] [INFO] default - GET /news/63ed162d20cced1750ae3109
+[2023-02-15T14:30:43.268] [INFO] default - GET /news
+[2023-02-15T14:30:51.655] [INFO] default - POST /news
+[2023-02-15T14:30:59.406] [INFO] default - DELETE /news/63ed16cbe396137d79c2845b
+[2023-02-15T14:32:40.671] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:32:42.423] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:32:46.021] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:32:47.611] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:32:58.863] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:00.511] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:01.791] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:03.385] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:12.298] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:13.886] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:16.293] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:17.882] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:27.660] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:29.250] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:31.444] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:33:33.050] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:33:51.650] [INFO] default - GET /news
+[2023-02-15T14:33:58.629] [INFO] default - POST /news
+[2023-02-15T14:34:05.050] [INFO] default - GET /news
+[2023-02-15T14:34:25.051] [INFO] default - PUT /news/63ed178696ad06b825bf3315
+[2023-02-15T14:34:36.149] [INFO] default - GET /news/63ed178696ad06b825bf3315
+[2023-02-15T14:34:42.647] [INFO] default - PUT /news/63ed178696ad06b825bf3315
+[2023-02-15T14:34:57.846] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:34:59.612] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:35:53.033] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:35:55.187] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:35:56.772] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:36:02.999] [INFO] default - DELETE /news/63ed178696ad06b825bf3315
+[2023-02-15T14:36:03.006] [FATAL] default - ObjectParameterError: Parameter "filter" to deleteOne() must be an object, got 63ed178696ad06b825bf3315
+    at Query.deleteOne (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/mongoose/lib/query.js:3149:16)
+    at Function.deleteOne (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/mongoose/lib/model.js:2158:13)
+    at DaoMongo.deleteNew (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/42%20-%20TESTING/03-proyecto-completo/src/persistence/DAOS/mongo/news.mongo.dao.js:56:46)
+    at NewsRepository.deleteNew (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/42%20-%20TESTING/03-proyecto-completo/src/persistence/repository/news.repository.js:31:42)
+    at deleteNew (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/42%20-%20TESTING/03-proyecto-completo/src/services/news.services.js:26:44)
+    at deleteNewCtr (file:///media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/42%20-%20TESTING/03-proyecto-completo/src/controllers/news.controllers.js:67:24)
+    at Layer.handle [as handle_request] (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/media/mauri/DATOS/CODERHOUSE/BACKEND/PLANIFICACION CLASES/42 - TESTING/03-proyecto-completo/node_modules/express/lib/router/layer.js:95:5)
+[2023-02-15T14:37:30.506] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:37:32.257] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:37:37.644] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:37:39.230] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:37:40.842] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:37:44.718] [INFO] default - DELETE /news/63ed178696ad06b825bf3315
+[2023-02-15T14:37:56.122] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:37:57.722] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:38:13.462] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:38:15.115] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:38:16.185] [INFO] default - POST /news
+[2023-02-15T14:38:16.838] [INFO] default - GET /news
+[2023-02-15T14:38:17.455] [INFO] default - PUT /news/63ed1889420544c1f6588ba5
+[2023-02-15T14:38:18.202] [INFO] default - DELETE /news/63ed1889420544c1f6588baa
+[2023-02-15T14:41:26.017] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:41:27.776] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:41:28.850] [INFO] default - POST /news
+[2023-02-15T14:41:29.509] [INFO] default - GET /news
+[2023-02-15T14:41:30.111] [INFO] default - PUT /news/63ed1949b289b1ee712e3c88
+[2023-02-15T14:41:30.872] [INFO] default - DELETE /news/63ed194ab289b1ee712e3c8d
+[2023-02-15T14:41:50.970] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:41:52.589] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:41:53.650] [INFO] default - POST /news
+[2023-02-15T14:42:28.171] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T14:42:29.906] [INFO] default - Conectado a MongoDB!
+[2023-02-15T14:42:30.972] [INFO] default - POST /news
+[2023-02-15T14:42:31.624] [INFO] default - GET /news
+[2023-02-15T14:42:32.245] [INFO] default - PUT /news/63ed198836755951e252de83
+[2023-02-15T14:42:33.000] [INFO] default - DELETE /news/63ed198836755951e252de88
+[2023-02-15T22:06:18.535] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T22:06:21.185] [INFO] default - Conectado a MongoDB!
+[2023-02-15T22:06:23.427] [INFO] default - POST /news
+[2023-02-15T22:18:07.188] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-15T22:18:09.762] [INFO] default - Conectado a MongoDB!
+[2023-02-15T22:18:11.976] [INFO] default - POST /news
+[2023-02-15T22:18:13.118] [INFO] default - GET /news
+[2023-02-15T22:18:14.203] [INFO] default - PUT /news/63ed845510f61f9219e83f12
+[2023-02-15T22:18:15.359] [INFO] default - DELETE /news/63ed845710f61f9219e83f17
+[2023-02-21T10:26:33.205] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T10:26:34.970] [INFO] default - Conectado a MongoDB!
+[2023-02-21T10:26:41.596] [INFO] default - GET /news
+[2023-02-21T10:27:08.786] [INFO] default - GET /news
+[2023-02-21T10:27:19.196] [INFO] default - GET /news
+[2023-02-21T10:31:37.164] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T10:31:38.910] [INFO] default - Conectado a MongoDB!
+[2023-02-21T10:31:42.030] [INFO] default - GET /news
+[2023-02-21T10:34:43.574] [INFO] default - GET /news/63f0c27eb8eebb44b31c91e8
+[2023-02-21T11:08:46.458] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T11:08:48.236] [INFO] default - Conectado a MongoDB!
+[2023-02-21T11:09:45.181] [INFO] default - GET /news
+[2023-02-21T11:16:38.511] [INFO] default - POST /news
+[2023-02-21T11:16:49.626] [INFO] default - GET /news/63f4d24660bf9488892a775c
+[2023-02-21T12:11:38.884] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:11:40.581] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:19:04.894] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:19:06.714] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:20:19.007] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:20:20.806] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:25:18.645] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:25:20.406] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:26:30.321] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:26:32.078] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:26:51.240] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:26:53.840] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:26:55.438] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:26:57.268] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:26:58.873] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:27:00.413] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:27:02.023] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:27:19.691] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:27:21.298] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:27:43.082] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:27:44.744] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:28:41.227] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:28:42.874] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:28:45.526] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:28:47.535] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:28:49.133] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:35:28.629] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:35:30.431] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:37:10.695] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:37:12.437] [INFO] default - Conectado a MongoDB!
+[2023-02-21T12:38:57.252] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-21T12:38:58.976] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:28:10.423] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:28:12.220] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:33:10.008] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:33:11.744] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:34:54.269] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:34:56.064] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:36:21.096] [INFO] default - GET /news
+[2023-02-22T18:36:35.095] [INFO] default - GET /news/63f0c27eb8eebb44b31c91e8
+[2023-02-22T18:51:09.735] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:51:11.526] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:51:55.981] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:51:57.602] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:53:45.375] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:53:47.179] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:54:12.025] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:54:13.654] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:56:00.916] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:56:02.672] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:57:54.322] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:57:56.102] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:58:35.007] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:58:36.621] [INFO] default - Conectado a MongoDB!
+[2023-02-22T18:59:04.130] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T18:59:05.899] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:00:43.054] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:00:44.852] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:01:26.006] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:01:27.620] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:06:20.556] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:06:22.317] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:07:22.455] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:07:24.218] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:07:53.071] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:07:54.675] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:08:11.392] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:08:12.989] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:09:28.467] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:09:30.215] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:14:54.657] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:14:56.425] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:15:20.327] [INFO] default - GET /news
+[2023-02-22T19:15:30.591] [INFO] default - DELETE /news/63f0c27eb8eebb44b31c91e8
+[2023-02-22T19:15:48.437] [INFO] default - GET /news
+[2023-02-22T19:25:34.139] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:25:35.883] [INFO] default - Conectado a MongoDB!
+[2023-02-22T19:25:49.890] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-02-22T19:25:51.501] [INFO] default - Conectado a MongoDB!
+[2023-08-21T09:46:34.895] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T09:46:36.718] [INFO] default - Conectado a MongoDB!
+[2023-08-21T09:47:22.848] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T09:47:24.577] [INFO] default - Conectado a MongoDB!
+[2023-08-21T09:47:59.167] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T09:48:00.985] [INFO] default - Conectado a MongoDB!
+[2023-08-21T10:13:32.424] [INFO] default - GET /news
+[2023-08-21T10:16:18.956] [INFO] default - POST /news
+[2023-08-21T10:16:39.480] [INFO] default - GET /news/64e363a252293156f8934a5e
+[2023-08-21T10:17:17.577] [INFO] default - DELETE /news/64e363a252293156f8934a5e
+[2023-08-21T10:17:29.111] [INFO] default - GET /news
+[2023-08-21T10:23:05.873] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:23:36.693] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:23:46.599] [INFO] default - GET /news
+[2023-08-21T10:24:06.136] [FATAL] default - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at Connection.openUri (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:411:10
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:1285:10)
+    at Mongoose.connect (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:410:20)
+    at DaoMongo.init (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/mongo/news.mongo.dao.js:10:18)
+    at file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/news.factory.js:13:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-08-21T10:24:51.083] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:25:14.425] [INFO] default - GET /news
+[2023-08-21T10:25:20.334] [INFO] default - POST /news
+[2023-08-21T10:25:20.485] [FATAL] default - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at Connection.openUri (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:411:10
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:1285:10)
+    at Mongoose.connect (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:410:20)
+    at DaoMongo.init (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/mongo/news.mongo.dao.js:10:18)
+    at file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/news.factory.js:13:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-08-21T10:25:30.377] [FATAL] default - MongooseError: Operation `news.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:175:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[2023-08-21T10:26:15.377] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:26:44.594] [FATAL] default - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at Connection.openUri (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:411:10
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:1285:10)
+    at Mongoose.connect (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:410:20)
+    at DaoMongo.init (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/mongo/news.mongo.dao.js:10:18)
+    at file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/news.factory.js:13:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-08-21T10:27:14.865] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:27:44.261] [FATAL] default - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at Connection.openUri (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:411:10
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at Mongoose._promiseOrCallback (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:1285:10)
+    at Mongoose.connect (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\index.js:410:20)
+    at DaoMongo.init (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/mongo/news.mongo.dao.js:10:18)
+    at file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/40%20-%20DOCUMENTACION%20EN%20API%20REST/01-app-noticias/src/persistence/DAOS/news.factory.js:13:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:194:25) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2023-08-21T10:28:06.144] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:28:07.932] [INFO] default - Conectado a MongoDB!
+[2023-08-21T10:28:48.991] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:28:56.091] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:28:57.790] [INFO] default - Conectado a MongoDB!
+[2023-08-21T10:28:59.763] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T10:29:01.457] [INFO] default - Conectado a MongoDB!
+[2023-08-21T15:46:55.199] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T15:46:57.030] [INFO] default - Conectado a MongoDB!
+[2023-08-21T15:46:59.289] [INFO] default - GET /
+[2023-08-21T15:58:53.267] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T15:58:55.095] [INFO] default - Conectado a MongoDB!
+[2023-08-21T15:59:32.863] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T15:59:34.622] [INFO] default - Conectado a MongoDB!
+[2023-08-21T15:59:37.294] [INFO] default - POST /news
+[2023-08-21T16:12:08.210] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:12:10.051] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:12:12.847] [INFO] default - GET /news
+[2023-08-21T16:14:23.055] [INFO] default - PUT /news/64e3b419da40c9a0d66694d1
+[2023-08-21T16:15:15.991] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:15:17.784] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:15:18.968] [INFO] default - PUT /news/64e3b419da40c9a0d66694d1
+[2023-08-21T16:15:48.262] [INFO] default - PUT /news/64e3b419da40c9a0d66694d1
+[2023-08-21T16:16:46.356] [INFO] default - DELETE /news/64e3b419da40c9a0d66694d1
+[2023-08-21T16:17:07.779] [INFO] default - GET /news
+[2023-08-21T16:18:28.716] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:18:30.509] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:18:31.620] [INFO] default - GET /news/64e363a252293156f8934a5e
+[2023-08-21T16:18:46.369] [INFO] default - GET /news/64e363a252293156f8934a5
+[2023-08-21T16:18:46.373] [FATAL] default - CastError: Cast to ObjectId failed for value "64e363a252293156f8934a5" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:4912:21)
+    at Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:5011:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"64e363a252293156f8934a5"',
+  kind: 'ObjectId',
+  value: '64e363a252293156f8934a5',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\cast.js:349:32)
+      at Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:5342:12),
+  valueType: 'string'
+}
+[2023-08-21T16:19:22.354] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:19:24.086] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:19:27.363] [INFO] default - GET /news/64e363a252293156f8934a5
+[2023-08-21T16:19:27.373] [FATAL] default - CastError: Cast to ObjectId failed for value "64e363a252293156f8934a5" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:4912:21)
+    at Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:5011:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"64e363a252293156f8934a5"',
+  kind: 'ObjectId',
+  value: '64e363a252293156f8934a5',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1648:15)
+      at SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1636:15)
+      at SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1612:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\cast.js:349:32)
+      at Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\query.js:5342:12),
+  valueType: 'string'
+}
+[2023-08-21T16:19:47.818] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:19:49.517] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:19:50.416] [INFO] default - GET /news
+[2023-08-21T16:19:54.808] [INFO] default - POST /news
+[2023-08-21T16:20:08.021] [INFO] default - GET /news/64e3b8da8596f5f39fe345a5
+[2023-08-21T16:22:46.958] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:22:48.761] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:22:49.019] [INFO] default - GET /news/64e3b8da8596f5f39fe345a5
+[2023-08-21T16:22:55.486] [INFO] default - GET /news/64e3b8da8596f5f39fe345a6
+[2023-08-21T16:23:18.336] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:23:20.010] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:23:20.991] [INFO] default - GET /news/64e3b8da8596f5f39fe345a6
+[2023-08-21T16:24:44.594] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:24:46.411] [INFO] default - Conectado a MongoDB!
+[2023-08-21T16:24:52.733] [INFO] default - POST /news
+[2023-08-21T16:24:52.753] [FATAL] default - Error: News validation failed: title: Path `title` is required.
+    at ValidationError.inspect (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\error\validation.js:50:26)
+    at formatValue (node:internal/util/inspect:805:19)
+    at inspect (node:internal/util/inspect:364:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2279:40)
+    at Object.format (node:internal/util/inspect:2136:10)
+    at basicLayout (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\log4js\lib\layouts.js:65:52)
+    at app (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\log4js\lib\appenders\file.js:98:23)
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    title: ValidatorError: Path `title` is required.
+        at validate (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1346:13)
+        at SchemaType.doValidate (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\schematype.js:1330:7)
+        at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongoose\lib\document.js:2905:18
+        at process.processTicksAndRejections (node:internal/process/task_queues:77:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'title',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'News validation failed'
+}
+[2023-08-21T16:25:01.706] [INFO] default - POST /news
+[2023-08-21T16:25:01.873] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "Subió el precio del dólar en Argentina" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\sdam\server.js:328:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection.js:239:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection.js:60:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Subió el precio del dólar en Argentina' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-21T16:25:25.549] [INFO] default - POST /news
+[2023-08-21T16:25:25.710] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "Subió el precio del dólar en Argentina" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\sdam\server.js:212:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\sdam\server.js:328:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection.js:239:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\connection.js:60:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\40 - DOCUMENTACION EN API REST\01-app-noticias\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Subió el precio del dólar en Argentina' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-21T16:25:42.334] [INFO] default - POST /news
+[2023-08-21T16:28:28.752] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-21T16:28:30.517] [INFO] default - Conectado a MongoDB!
+[2023-08-24T09:25:09.836] [INFO] default - Conectado a MongoDB!
+[2023-08-24T09:34:25.803] [INFO] default - Conectado a MongoDB!
+[2023-08-24T09:35:14.665] [INFO] default - Conectado a MongoDB!
+[2023-08-24T09:35:14.699] [INFO] default - se limpió base de datos
+[2023-08-24T09:38:15.195] [INFO] default - Conectado a MongoDB!
+[2023-08-24T09:38:15.245] [INFO] default - se limpió base de datos
+[2023-08-24T09:38:15.329] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:21:51.220] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:21:51.253] [INFO] default - se limpió base de datos
+[2023-08-24T10:21:51.301] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:28:37.956] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:28:37.983] [INFO] default - se limpió base de datos
+[2023-08-24T10:28:38.071] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:29:16.253] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:29:16.284] [INFO] default - se limpió base de datos
+[2023-08-24T10:29:16.369] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:29:43.195] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:29:43.234] [INFO] default - se limpió base de datos
+[2023-08-24T10:29:43.293] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:30:18.603] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:30:18.643] [INFO] default - se limpió base de datos
+[2023-08-24T10:30:18.749] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:30:50.834] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:30:50.869] [INFO] default - se limpió base de datos
+[2023-08-24T10:30:50.951] [INFO] default - finalizaron las pruebas
+[2023-08-24T10:59:45.757] [INFO] default - Conectado a MongoDB!
+[2023-08-24T10:59:45.794] [INFO] default - se limpió base de datos
+[2023-08-24T10:59:45.863] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:00:14.860] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:00:14.891] [INFO] default - se limpió base de datos
+[2023-08-24T11:00:14.987] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:02:53.508] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:02:53.549] [INFO] default - se limpió base de datos
+[2023-08-24T11:02:53.571] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:04:05.923] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:04:05.953] [INFO] default - se limpió base de datos
+[2023-08-24T11:04:05.973] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:07:02.756] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:07:02.792] [INFO] default - se limpió base de datos
+[2023-08-24T11:07:02.886] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:07:25.027] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:07:25.061] [INFO] default - se limpió base de datos
+[2023-08-24T11:07:25.159] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:07:59.347] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:07:59.384] [INFO] default - se limpió base de datos
+[2023-08-24T11:07:59.480] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:23:54.357] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:23:54.392] [INFO] default - se limpió base de datos
+[2023-08-24T11:23:54.507] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:24:45.863] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:24:45.896] [INFO] default - se limpió base de datos
+[2023-08-24T11:24:46.062] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:29:08.714] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:29:08.749] [INFO] default - se limpió base de datos
+[2023-08-24T11:29:08.860] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:32:07.142] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:32:07.178] [INFO] default - se limpió base de datos
+[2023-08-24T11:32:07.284] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:33:01.164] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:33:01.198] [INFO] default - se limpió base de datos
+[2023-08-24T11:33:01.446] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:33:34.871] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:33:34.905] [INFO] default - se limpió base de datos
+[2023-08-24T11:33:35.010] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:34:38.721] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:34:38.755] [INFO] default - se limpió base de datos
+[2023-08-24T11:34:38.866] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:35:04.604] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:35:04.644] [INFO] default - se limpió base de datos
+[2023-08-24T11:35:04.740] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:36:01.028] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:36:01.058] [INFO] default - se limpió base de datos
+[2023-08-24T11:36:01.180] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:38:34.499] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:38:34.534] [INFO] default - se limpió base de datos
+[2023-08-24T11:38:34.641] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:39:28.629] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:39:28.666] [INFO] default - se limpió base de datos
+[2023-08-24T11:39:28.785] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:40:11.511] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:40:11.549] [INFO] default - se limpió base de datos
+[2023-08-24T11:40:11.678] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:42:10.570] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:42:10.668] [INFO] default - se limpió base de datos
+[2023-08-24T11:42:10.882] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:46:37.790] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:46:37.828] [INFO] default - se limpió base de datos
+[2023-08-24T11:46:37.960] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Chai es el mejor" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at Socket.ondata (node:internal/streams/readable:766:22)
+    at Socket.emit (node:events:514:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Chai es el mejor' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T11:46:37.973] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:47:08.939] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:47:08.986] [INFO] default - se limpió base de datos
+[2023-08-24T11:47:09.117] [FATAL] default - ObjectParameterError: Parameter "filter" to updateOne() must be an object, got "64e76d6d8809545af13ac5ed" (type string)
+    at _update (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongoose\lib\query.js:4747:17)
+    at Query.updateOne (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongoose\lib\query.js:4648:10)
+    at _update (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongoose\lib\model.js:4369:16)
+    at Function.updateOne (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongoose\lib\model.js:4299:10)
+    at DaoMongo.updateNew (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/41%20-%20TEST%20UNITARIO/02-tests-unitarios/src/persistence/DAOS/mongo/news.mongo.dao.js:45:46)
+    at Context.<anonymous> (file:///D:/CODERHOUSE/BACKEND/PLANIFICACION%20CLASES/CONTENIDO%20NUEVO/41%20-%20TEST%20UNITARIO/02-tests-unitarios/src/test/news.dao.chai.test.js:80:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-08-24T11:47:09.126] [INFO] default - finalizaron las pruebas
+[2023-08-24T11:47:54.465] [INFO] default - Conectado a MongoDB!
+[2023-08-24T11:47:54.537] [INFO] default - se limpió base de datos
+[2023-08-24T11:47:54.650] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:24:48.893] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:24:48.923] [INFO] default - se limpió base de datos
+[2023-08-24T15:24:49.040] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:26:08.759] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:26:08.794] [INFO] default - se limpió base de datos
+[2023-08-24T15:26:08.932] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:27:06.177] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:27:06.209] [INFO] default - se limpió base de datos
+[2023-08-24T15:27:06.340] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:29:02.452] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:29:02.484] [INFO] default - se limpió base de datos
+[2023-08-24T15:29:02.614] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:29:15.858] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:29:15.892] [INFO] default - se limpió base de datos
+[2023-08-24T15:29:16.074] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:32:03.138] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:32:03.176] [INFO] default - se limpió base de datos
+[2023-08-24T15:32:03.295] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:32:25.641] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:32:25.671] [INFO] default - se limpió base de datos
+[2023-08-24T15:32:25.815] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:34:04.287] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:34:04.320] [INFO] default - se limpió base de datos
+[2023-08-24T15:34:04.464] [INFO] default - finalizaron las pruebas
+[2023-08-24T15:37:54.373] [INFO] default - Conectado a MongoDB!
+[2023-08-24T15:37:54.412] [INFO] default - se limpió base de datos
+[2023-08-24T15:37:54.552] [INFO] default - finalizaron las pruebas
+[2023-08-24T18:10:43.197] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:10:43.236] [INFO] default - se limpió base de datos
+[2023-08-24T18:11:10.254] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:11:10.286] [INFO] default - se limpió base de datos
+[2023-08-24T18:14:23.303] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:14:23.333] [INFO] default - se limpió base de datos
+[2023-08-24T18:14:57.617] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:14:57.656] [INFO] default - se limpió base de datos
+[2023-08-24T18:17:25.020] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:17:25.181] [INFO] default - se limpió base de datos
+[2023-08-24T18:21:25.662] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:21:25.888] [INFO] default - se limpió base de datos
+[2023-08-24T18:21:27.259] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:21:27.310] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:21:27.331] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:22:31.154] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:22:31.278] [INFO] default - se limpió base de datos
+[2023-08-24T18:35:25.860] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:35:25.888] [INFO] default - se limpió base de datos
+[2023-08-24T18:35:26.031] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:35:26.050] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:35:26.067] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:36:05.930] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:36:05.959] [INFO] default - se limpió base de datos
+[2023-08-24T18:36:06.062] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:36:06.080] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:36:06.094] [FATAL] default - MongoServerError: E11000 duplicate key error collection: coderhouse.news index: title_1 dup key: { title: "Calor en Córdoba" }
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:210:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\sdam\server.js:326:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:514:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\41 - TEST UNITARIO\02-tests-unitarios\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Calor en Córdoba' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2023-08-24T18:45:21.296] [INFO] default - Conectado a MongoDB!
+[2023-08-24T18:45:21.331] [INFO] default - se limpió base de datos
+[2023-08-28T13:34:19.858] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:34:19.960] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:35:51.274] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:35:51.324] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:37:03.918] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:37:04.019] [INFO] default - POST /news
+[2023-08-28T13:37:27.170] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:37:27.200] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:37:27.270] [INFO] default - POST /news
+[2023-08-28T13:38:20.566] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:38:20.605] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:38:20.673] [INFO] default - POST /news
+[2023-08-28T13:43:26.425] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:43:26.485] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:46:13.338] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T13:46:13.376] [INFO] default - Conectado a MongoDB!
+[2023-08-28T13:46:13.453] [INFO] default - POST /news
+[2023-08-28T13:46:13.526] [INFO] default - GET /news
+[2023-08-28T13:46:13.595] [INFO] default - PUT /news/64eccf559efdccf5a944aab9
+[2023-08-28T13:46:13.688] [INFO] default - DELETE /news/64eccf559efdccf5a944aabe
+[2023-08-28T15:25:00.977] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T15:25:01.031] [INFO] default - Conectado a MongoDB!
+[2023-08-28T15:25:01.104] [INFO] default - POST /news
+[2023-08-28T15:25:01.178] [INFO] default - GET /news
+[2023-08-28T15:25:01.237] [INFO] default - PUT /news/64ece67d5403b97069a990a5
+[2023-08-28T15:25:01.309] [INFO] default - DELETE /news/64ece67d5403b97069a990aa
+[2023-08-28T15:28:51.392] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T15:28:51.425] [INFO] default - Conectado a MongoDB!
+[2023-08-28T15:28:51.497] [INFO] default - POST /news
+[2023-08-28T15:33:58.097] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-28T15:33:58.134] [INFO] default - Conectado a MongoDB!
+[2023-08-28T15:33:58.290] [INFO] default - POST /news
+[2023-08-29T07:31:47.813] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:31:47.875] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:31:48.377] [INFO] default - POST /news
+[2023-08-29T07:33:45.872] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:33:45.971] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:33:46.055] [INFO] default - POST /news
+[2023-08-29T07:36:00.503] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:36:00.568] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:36:22.719] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:36:22.844] [INFO] default - POST /news
+[2023-08-29T07:36:22.896] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:37:47.341] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:37:47.437] [INFO] default - POST /news
+[2023-08-29T07:37:47.494] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:38:28.300] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:38:28.339] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:38:51.093] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:38:51.191] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:38:51.281] [INFO] default - POST /news
+[2023-08-29T07:40:09.396] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:40:09.552] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:40:09.728] [INFO] default - POST /news
+[2023-08-29T07:40:28.909] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:40:28.978] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:40:29.071] [INFO] default - POST /news
+[2023-08-29T07:40:29.230] [INFO] default - POST /news
+[2023-08-29T07:40:29.279] [INFO] default - GET /news
+[2023-08-29T07:44:25.912] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:44:25.975] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:44:26.112] [INFO] default - POST /news
+[2023-08-29T07:44:26.261] [INFO] default - POST /news
+[2023-08-29T07:44:26.311] [INFO] default - GET /news
+[2023-08-29T07:44:26.366] [INFO] default - POST /news
+[2023-08-29T07:45:13.450] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:45:13.517] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:45:13.606] [INFO] default - POST /news
+[2023-08-29T07:45:13.680] [INFO] default - POST /news
+[2023-08-29T07:45:13.737] [INFO] default - GET /news
+[2023-08-29T07:45:13.785] [INFO] default - POST /news
+[2023-08-29T07:45:13.840] [INFO] default - PUT /news/undefined
+[2023-08-29T07:45:13.851] [FATAL] default - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at model.Query.Object.<anonymous>.Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"undefined"',
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\error.ts:16:5)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.Object.<anonymous>.ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Object.<anonymous>.Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12)
+      at model.Query.Object.<anonymous>.Query._castConditions (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2229:10)
+      at model.Query.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2529:8)
+      at model.Query._wrappedThunk [as _findOne] (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+      at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\kareem\index.js:497:25
+      at processTicksAndRejections (internal/process/task_queues.js:77:11),
+  valueType: 'string'
+}
+[2023-08-29T07:47:11.735] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:47:11.795] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:47:11.885] [INFO] default - POST /news
+[2023-08-29T07:47:11.995] [INFO] default - POST /news
+[2023-08-29T07:47:12.080] [INFO] default - GET /news
+[2023-08-29T07:47:12.187] [INFO] default - POST /news
+[2023-08-29T07:47:12.245] [INFO] default - PUT /news/undefined
+[2023-08-29T07:47:12.253] [FATAL] default - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at model.Query.Object.<anonymous>.Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"undefined"',
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\error.ts:16:5)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.Object.<anonymous>.ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Object.<anonymous>.Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12)
+      at model.Query.Object.<anonymous>.Query._castConditions (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2229:10)
+      at model.Query.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2529:8)
+      at model.Query._wrappedThunk [as _findOne] (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+      at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\kareem\index.js:497:25
+      at processTicksAndRejections (internal/process/task_queues.js:77:11),
+  valueType: 'string'
+}
+[2023-08-29T07:48:20.803] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:48:20.859] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:48:20.947] [INFO] default - POST /news
+[2023-08-29T07:48:21.049] [INFO] default - POST /news
+[2023-08-29T07:48:21.094] [INFO] default - GET /news
+[2023-08-29T07:48:21.136] [INFO] default - POST /news
+[2023-08-29T07:48:44.664] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:48:44.716] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:48:44.797] [INFO] default - POST /news
+[2023-08-29T07:48:44.863] [INFO] default - POST /news
+[2023-08-29T07:48:44.909] [INFO] default - GET /news
+[2023-08-29T07:48:44.956] [INFO] default - POST /news
+[2023-08-29T07:48:45.092] [INFO] default - PUT /news/undefined
+[2023-08-29T07:48:45.103] [FATAL] default - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at model.Query.Object.<anonymous>.Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+  messageFormat: undefined,
+  stringValue: '"undefined"',
+  kind: 'ObjectId',
+  value: 'undefined',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\error.ts:16:5)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\src\objectid.ts:88:15)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.Object.<anonymous>.ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:342:32)
+      at model.Query.Object.<anonymous>.Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12)
+      at model.Query.Object.<anonymous>.Query._castConditions (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2229:10)
+      at model.Query.<anonymous> (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:2529:8)
+      at model.Query._wrappedThunk [as _findOne] (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\helpers\query\wrapThunk.js:29:8)
+      at D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\kareem\index.js:497:25
+      at processTicksAndRejections (internal/process/task_queues.js:77:11),
+  valueType: 'string'
+}
+[2023-08-29T07:49:50.331] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:49:50.400] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:49:50.493] [INFO] default - POST /news
+[2023-08-29T07:49:50.579] [INFO] default - POST /news
+[2023-08-29T07:49:50.637] [INFO] default - GET /news
+[2023-08-29T07:49:50.678] [INFO] default - POST /news
+[2023-08-29T07:50:25.899] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:50:25.949] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:50:26.063] [INFO] default - POST /news
+[2023-08-29T07:50:26.171] [INFO] default - POST /news
+[2023-08-29T07:50:26.233] [INFO] default - GET /news
+[2023-08-29T07:50:26.284] [INFO] default - POST /news
+[2023-08-29T07:51:41.356] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:51:41.408] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:51:41.503] [INFO] default - POST /news
+[2023-08-29T07:51:41.606] [INFO] default - POST /news
+[2023-08-29T07:51:41.663] [INFO] default - GET /news
+[2023-08-29T07:51:41.715] [INFO] default - POST /news
+[2023-08-29T07:51:41.784] [INFO] default - PUT /news/64edcdbd4ecd7f23a90a9e04
+[2023-08-29T07:52:44.371] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:52:44.433] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:52:44.517] [INFO] default - POST /news
+[2023-08-29T07:52:44.669] [INFO] default - POST /news
+[2023-08-29T07:52:44.737] [INFO] default - GET /news
+[2023-08-29T07:52:44.785] [INFO] default - POST /news
+[2023-08-29T07:52:44.850] [INFO] default - PUT /news/64edcdfc64ee37586d356f11
+[2023-08-29T07:53:53.613] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:53:53.669] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:53:53.774] [INFO] default - POST /news
+[2023-08-29T07:53:53.877] [INFO] default - POST /news
+[2023-08-29T07:53:53.949] [INFO] default - GET /news
+[2023-08-29T07:53:53.999] [INFO] default - POST /news
+[2023-08-29T07:53:54.062] [INFO] default - PUT /news/64edce4221514faaddd6d450
+[2023-08-29T07:53:54.114] [INFO] default - POST /news
+[2023-08-29T07:53:54.164] [INFO] default - DELETE /news/64edce4221514faaddd6d455
+[2023-08-29T07:54:48.004] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:54:48.061] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:54:48.147] [INFO] default - POST /news
+[2023-08-29T07:54:48.222] [INFO] default - POST /news
+[2023-08-29T07:54:48.267] [INFO] default - GET /news
+[2023-08-29T07:54:48.397] [INFO] default - POST /news
+[2023-08-29T07:54:48.476] [INFO] default - PUT /news/64edce78984006ad2250d26c
+[2023-08-29T07:54:48.515] [INFO] default - POST /news
+[2023-08-29T07:54:48.562] [INFO] default - DELETE /news/64edce78984006ad2250d271
+[2023-08-29T07:59:30.565] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T07:59:30.623] [INFO] default - Conectado a MongoDB!
+[2023-08-29T07:59:30.728] [INFO] default - POST /news
+[2023-08-29T07:59:30.824] [INFO] default - POST /news
+[2023-08-29T07:59:30.877] [INFO] default - GET /news
+[2023-08-29T07:59:30.929] [INFO] default - POST /news
+[2023-08-29T07:59:30.988] [INFO] default - POST /news
+[2023-08-29T07:59:31.049] [INFO] default - PUT /news/64edcf92e20b3e91db2083c4
+[2023-08-29T07:59:31.099] [INFO] default - POST /news
+[2023-08-29T07:59:31.153] [INFO] default - DELETE /news/64edcf93e20b3e91db2083c9
+[2023-08-29T08:01:02.138] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T08:01:02.253] [INFO] default - Conectado a MongoDB!
+[2023-08-29T08:01:02.361] [INFO] default - POST /news
+[2023-08-29T08:01:02.492] [INFO] default - POST /news
+[2023-08-29T08:01:02.549] [INFO] default - GET /news
+[2023-08-29T08:01:02.603] [INFO] default - POST /news
+[2023-08-29T08:01:02.659] [INFO] default - POST /news
+[2023-08-29T08:01:02.714] [INFO] default - PUT /news/64edcfee4ff6b822f84b2b6e
+[2023-08-29T08:01:02.766] [INFO] default - POST /news
+[2023-08-29T08:01:02.850] [INFO] default - DELETE /news/64edcfee4ff6b822f84b2b73
+[2023-08-29T08:02:02.970] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T08:02:03.045] [INFO] default - Conectado a MongoDB!
+[2023-08-29T08:02:03.157] [INFO] default - POST /news
+[2023-08-29T08:02:03.273] [INFO] default - POST /news
+[2023-08-29T08:02:03.326] [INFO] default - GET /news
+[2023-08-29T08:02:03.382] [INFO] default - POST /news
+[2023-08-29T08:02:03.442] [INFO] default - POST /news
+[2023-08-29T08:02:03.494] [INFO] default - PUT /news/64edd02b40fde18f0872cdd1
+[2023-08-29T08:02:03.539] [INFO] default - POST /news
+[2023-08-29T08:02:03.586] [INFO] default - DELETE /news/64edd02b40fde18f0872cdd6
+[2023-08-29T08:04:36.830] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T08:04:36.888] [INFO] default - Conectado a MongoDB!
+[2023-08-29T08:04:37.000] [INFO] default - POST /news
+[2023-08-29T08:04:37.100] [INFO] default - POST /news
+[2023-08-29T08:04:37.162] [INFO] default - GET /news
+[2023-08-29T08:04:37.215] [INFO] default - POST /news
+[2023-08-29T08:04:37.284] [INFO] default - GET /news/64edd0c5d9634d496957f0ef
+[2023-08-29T08:04:37.314] [INFO] default - POST /news
+[2023-08-29T08:04:37.378] [INFO] default - PUT /news/64edd0c5d9634d496957f0f3
+[2023-08-29T08:04:37.421] [INFO] default - POST /news
+[2023-08-29T08:04:37.471] [INFO] default - DELETE /news/64edd0c5d9634d496957f0f8
+[2023-08-29T08:10:27.238] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T08:10:27.291] [INFO] default - Conectado a MongoDB!
+[2023-08-29T08:10:27.374] [INFO] default - POST /news
+[2023-08-29T08:10:27.451] [INFO] default - POST /news
+[2023-08-29T08:10:27.505] [INFO] default - GET /news
+[2023-08-29T08:10:27.558] [INFO] default - POST /news
+[2023-08-29T08:10:27.605] [INFO] default - GET /news/64edd223d207afa9e92d4060
+[2023-08-29T08:10:27.640] [INFO] default - POST /news
+[2023-08-29T08:10:27.769] [INFO] default - PUT /news/64edd223d207afa9e92d4064
+[2023-08-29T08:10:27.805] [INFO] default - POST /news
+[2023-08-29T08:10:27.846] [INFO] default - DELETE /news/64edd223d207afa9e92d4069
+[2023-08-29T08:10:27.867] [INFO] default - GET /news/64edd223d207afa9e92d4069
+[2023-08-29T08:11:15.049] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T08:11:15.107] [INFO] default - Conectado a MongoDB!
+[2023-08-29T08:11:15.217] [INFO] default - POST /news
+[2023-08-29T08:11:15.317] [INFO] default - POST /news
+[2023-08-29T08:11:15.376] [INFO] default - GET /news
+[2023-08-29T08:11:15.431] [INFO] default - POST /news
+[2023-08-29T08:11:15.481] [INFO] default - GET /news/64edd2538c3a24cb3680411a
+[2023-08-29T08:11:15.510] [INFO] default - POST /news
+[2023-08-29T08:11:15.579] [INFO] default - PUT /news/64edd2538c3a24cb3680411e
+[2023-08-29T08:11:15.620] [INFO] default - POST /news
+[2023-08-29T08:11:15.677] [INFO] default - DELETE /news/64edd2538c3a24cb36804123
+[2023-08-29T08:11:15.700] [INFO] default - GET /news/64edd2538c3a24cb36804123
+[2023-08-29T09:18:50.016] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T09:18:50.114] [INFO] default - Conectado a MongoDB!
+[2023-08-29T09:18:50.398] [INFO] default - POST /news
+[2023-08-29T09:18:50.548] [INFO] default - POST /news
+[2023-08-29T09:18:50.597] [INFO] default - GET /news
+[2023-08-29T09:18:50.656] [INFO] default - POST /news
+[2023-08-29T09:18:50.714] [INFO] default - GET /news/64ede22a54f24bd43dec613c
+[2023-08-29T09:18:50.748] [INFO] default - POST /news
+[2023-08-29T09:18:50.805] [INFO] default - PUT /news/64ede22a54f24bd43dec6140
+[2023-08-29T09:18:50.847] [INFO] default - POST /news
+[2023-08-29T09:18:50.901] [INFO] default - DELETE /news/64ede22a54f24bd43dec6145
+[2023-08-29T09:18:50.922] [INFO] default - GET /news/64ede22a54f24bd43dec6145
+[2023-08-29T10:20:29.952] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:20:30.055] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:20:30.162] [INFO] default - POST /news
+[2023-08-29T10:20:30.241] [INFO] default - POST /news
+[2023-08-29T10:20:30.288] [INFO] default - GET /news
+[2023-08-29T10:20:30.330] [INFO] default - POST /news
+[2023-08-29T10:20:30.379] [INFO] default - GET /news/64edf09efafbaa6a9bcf3324
+[2023-08-29T10:20:30.407] [INFO] default - POST /news
+[2023-08-29T10:20:30.458] [INFO] default - PUT /news/64edf09efafbaa6a9bcf3328
+[2023-08-29T10:20:30.499] [INFO] default - POST /news
+[2023-08-29T10:20:30.550] [INFO] default - DELETE /news/64edf09efafbaa6a9bcf332d
+[2023-08-29T10:20:30.572] [INFO] default - GET /news/64edf09efafbaa6a9bcf332d
+[2023-08-29T10:22:45.919] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:22:45.998] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:22:46.132] [INFO] default - POST /news
+[2023-08-29T10:22:46.243] [INFO] default - POST /news
+[2023-08-29T10:22:46.285] [INFO] default - GET /news
+[2023-08-29T10:22:46.327] [INFO] default - POST /news
+[2023-08-29T10:22:46.369] [INFO] default - GET /news/64edf126656a1aa1b42043c0
+[2023-08-29T10:22:46.402] [INFO] default - POST /news
+[2023-08-29T10:22:46.448] [INFO] default - PUT /news/64edf126656a1aa1b42043c4
+[2023-08-29T10:22:46.485] [INFO] default - POST /news
+[2023-08-29T10:22:46.531] [INFO] default - DELETE /news/64edf126656a1aa1b42043c9
+[2023-08-29T10:22:46.550] [INFO] default - GET /news/64edf126656a1aa1b42043c9
+[2023-08-29T10:32:50.870] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:32:50.919] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:32:51.003] [INFO] default - POST /news
+[2023-08-29T10:32:51.082] [INFO] default - POST /news
+[2023-08-29T10:32:51.125] [INFO] default - GET /news
+[2023-08-29T10:32:51.169] [INFO] default - POST /news
+[2023-08-29T10:32:51.213] [INFO] default - GET /news/64edf3838cdf710e8458eff9
+[2023-08-29T10:32:51.247] [INFO] default - POST /news
+[2023-08-29T10:32:51.291] [INFO] default - PUT /news/64edf3838cdf710e8458effd
+[2023-08-29T10:32:51.324] [INFO] default - POST /news
+[2023-08-29T10:32:51.367] [INFO] default - DELETE /news/64edf3838cdf710e8458f002
+[2023-08-29T10:32:51.386] [INFO] default - GET /news/64edf3838cdf710e8458f002
+[2023-08-29T10:36:12.424] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:36:12.486] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:36:12.570] [INFO] default - POST /news
+[2023-08-29T10:36:12.645] [INFO] default - POST /news
+[2023-08-29T10:36:12.690] [INFO] default - GET /news
+[2023-08-29T10:36:12.733] [INFO] default - POST /news
+[2023-08-29T10:36:12.775] [INFO] default - GET /news/64edf44c55e08ad5701ebc7e
+[2023-08-29T10:36:12.810] [INFO] default - POST /news
+[2023-08-29T10:36:12.861] [INFO] default - PUT /news/64edf44c55e08ad5701ebc82
+[2023-08-29T10:36:12.911] [INFO] default - POST /news
+[2023-08-29T10:36:13.015] [INFO] default - DELETE /news/64edf44c55e08ad5701ebc87
+[2023-08-29T10:36:13.040] [INFO] default - GET /news/64edf44c55e08ad5701ebc87
+[2023-08-29T10:36:50.658] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:36:50.716] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:36:50.804] [INFO] default - POST /news
+[2023-08-29T10:36:50.880] [INFO] default - POST /news
+[2023-08-29T10:36:50.926] [INFO] default - GET /news
+[2023-08-29T10:36:50.969] [INFO] default - POST /news
+[2023-08-29T10:36:51.018] [INFO] default - GET /news/64edf4725e8732a5ec8133e8
+[2023-08-29T10:36:51.048] [INFO] default - POST /news
+[2023-08-29T10:36:51.098] [INFO] default - PUT /news/64edf4735e8732a5ec8133ec
+[2023-08-29T10:36:51.133] [INFO] default - POST /news
+[2023-08-29T10:36:51.176] [INFO] default - DELETE /news/64edf4735e8732a5ec8133f1
+[2023-08-29T10:36:51.199] [INFO] default - GET /news/64edf4735e8732a5ec8133f1
+[2023-08-29T10:37:17.563] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:37:17.611] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:37:17.694] [INFO] default - POST /news
+[2023-08-29T10:37:17.771] [INFO] default - POST /news
+[2023-08-29T10:37:17.820] [INFO] default - GET /news
+[2023-08-29T10:37:17.867] [INFO] default - POST /news
+[2023-08-29T10:37:17.910] [INFO] default - GET /news/64edf48d3cf6889c885aa3a1
+[2023-08-29T10:37:17.935] [INFO] default - POST /news
+[2023-08-29T10:37:17.976] [INFO] default - PUT /news/64edf48d3cf6889c885aa3a5
+[2023-08-29T10:37:18.015] [INFO] default - POST /news
+[2023-08-29T10:37:18.061] [INFO] default - DELETE /news/64edf48e3cf6889c885aa3aa
+[2023-08-29T10:37:18.081] [INFO] default - GET /news/64edf48e3cf6889c885aa3aa
+[2023-08-29T10:46:20.788] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:46:20.842] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:46:20.928] [INFO] default - POST /news
+[2023-08-29T10:46:21.005] [INFO] default - POST /news
+[2023-08-29T10:46:21.050] [INFO] default - GET /news
+[2023-08-29T10:46:21.093] [INFO] default - POST /news
+[2023-08-29T10:46:21.141] [INFO] default - GET /news/64edf6adc80c1795449ce640
+[2023-08-29T10:46:21.163] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:46:21.201] [INFO] default - POST /news
+[2023-08-29T10:46:21.262] [INFO] default - PUT /news/64edf6adc80c1795449ce645
+[2023-08-29T10:46:21.295] [INFO] default - POST /news
+[2023-08-29T10:46:21.341] [INFO] default - DELETE /news/64edf6adc80c1795449ce64a
+[2023-08-29T10:46:21.362] [INFO] default - GET /news/64edf6adc80c1795449ce64a
+[2023-08-29T10:48:37.381] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:48:37.430] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:48:37.509] [INFO] default - POST /news
+[2023-08-29T10:48:37.593] [INFO] default - POST /news
+[2023-08-29T10:48:37.678] [INFO] default - GET /news
+[2023-08-29T10:48:37.726] [INFO] default - POST /news
+[2023-08-29T10:48:37.782] [INFO] default - GET /news/64edf73549599fa2231846c3
+[2023-08-29T10:48:37.806] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:48:37.853] [INFO] default - POST /news
+[2023-08-29T10:48:37.906] [INFO] default - PUT /news/64edf73549599fa2231846c8
+[2023-08-29T10:48:37.944] [INFO] default - POST /news
+[2023-08-29T10:48:37.986] [INFO] default - DELETE /news/64edf73549599fa2231846cd
+[2023-08-29T10:48:38.009] [INFO] default - GET /news/64edf73549599fa2231846cd
+[2023-08-29T10:49:27.599] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:49:27.647] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:49:27.732] [INFO] default - POST /news
+[2023-08-29T10:49:27.806] [INFO] default - POST /news
+[2023-08-29T10:49:27.854] [INFO] default - GET /news
+[2023-08-29T10:49:27.898] [INFO] default - POST /news
+[2023-08-29T10:49:27.942] [INFO] default - GET /news/64edf767a8f0861de43849d5
+[2023-08-29T10:49:27.971] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:49:28.003] [INFO] default - POST /news
+[2023-08-29T10:49:28.057] [INFO] default - PUT /news/64edf768a8f0861de43849da
+[2023-08-29T10:49:28.093] [INFO] default - POST /news
+[2023-08-29T10:49:28.143] [INFO] default - DELETE /news/64edf768a8f0861de43849df
+[2023-08-29T10:49:28.164] [INFO] default - GET /news/64edf768a8f0861de43849df
+[2023-08-29T10:49:46.016] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:49:46.064] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:49:46.150] [INFO] default - POST /news
+[2023-08-29T10:49:46.217] [INFO] default - POST /news
+[2023-08-29T10:49:46.265] [INFO] default - GET /news
+[2023-08-29T10:49:46.304] [INFO] default - POST /news
+[2023-08-29T10:49:46.361] [INFO] default - GET /news/64edf77aaf99d7d5dd438b9d
+[2023-08-29T10:49:46.385] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:49:46.410] [INFO] default - POST /news
+[2023-08-29T10:49:46.464] [INFO] default - PUT /news/64edf77aaf99d7d5dd438ba2
+[2023-08-29T10:49:46.513] [INFO] default - POST /news
+[2023-08-29T10:49:46.567] [INFO] default - DELETE /news/64edf77aaf99d7d5dd438ba7
+[2023-08-29T10:49:46.590] [INFO] default - GET /news/64edf77aaf99d7d5dd438ba7
+[2023-08-29T10:53:08.158] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:53:08.214] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:53:08.302] [INFO] default - POST /news
+[2023-08-29T10:53:08.383] [INFO] default - POST /news
+[2023-08-29T10:53:08.434] [INFO] default - GET /news
+[2023-08-29T10:53:08.487] [INFO] default - POST /news
+[2023-08-29T10:53:08.542] [INFO] default - GET /news/64edf844d5607b27e1ad2972
+[2023-08-29T10:53:08.565] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:53:08.599] [INFO] default - POST /news
+[2023-08-29T10:53:08.642] [INFO] default - PUT /news/64edf844d5607b27e1ad2977
+[2023-08-29T10:53:08.681] [INFO] default - POST /news
+[2023-08-29T10:53:08.727] [INFO] default - DELETE /news/64edf844d5607b27e1ad297c
+[2023-08-29T10:53:08.747] [INFO] default - GET /news/64edf844d5607b27e1ad297c
+[2023-08-29T10:53:54.178] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:53:54.234] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:53:54.315] [INFO] default - POST /news
+[2023-08-29T10:53:54.395] [INFO] default - POST /news
+[2023-08-29T10:53:54.441] [INFO] default - GET /news
+[2023-08-29T10:53:54.486] [INFO] default - POST /news
+[2023-08-29T10:53:54.533] [INFO] default - GET /news/64edf87260d15ec9d74bf1b5
+[2023-08-29T10:53:54.556] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:53:54.593] [INFO] default - POST /news
+[2023-08-29T10:53:54.642] [INFO] default - PUT /news/64edf87260d15ec9d74bf1ba
+[2023-08-29T10:53:54.678] [INFO] default - POST /news
+[2023-08-29T10:53:54.721] [INFO] default - DELETE /news/64edf87260d15ec9d74bf1bf
+[2023-08-29T10:53:54.742] [INFO] default - GET /news/64edf87260d15ec9d74bf1bf
+[2023-08-29T10:57:56.167] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:57:56.225] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:57:56.312] [INFO] default - POST /news
+[2023-08-29T10:57:56.386] [INFO] default - POST /news
+[2023-08-29T10:57:56.431] [INFO] default - GET /news
+[2023-08-29T10:57:56.475] [INFO] default - POST /news
+[2023-08-29T10:57:56.519] [INFO] default - GET /news/64edf96457ca8812b75c5743
+[2023-08-29T10:57:56.539] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:57:56.576] [INFO] default - POST /news
+[2023-08-29T10:57:56.621] [INFO] default - PUT /news/64edf96457ca8812b75c5748
+[2023-08-29T10:57:56.654] [INFO] default - POST /news
+[2023-08-29T10:57:56.693] [INFO] default - DELETE /news/64edf96457ca8812b75c574d
+[2023-08-29T10:57:56.712] [INFO] default - GET /news/64edf96457ca8812b75c574d
+[2023-08-29T10:58:59.964] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T10:59:00.036] [INFO] default - Conectado a MongoDB!
+[2023-08-29T10:59:00.126] [INFO] default - POST /news
+[2023-08-29T10:59:00.258] [INFO] default - POST /news
+[2023-08-29T10:59:00.313] [INFO] default - GET /news
+[2023-08-29T10:59:00.359] [INFO] default - POST /news
+[2023-08-29T10:59:00.402] [INFO] default - GET /news/64edf9a4eb065a7f1249ea77
+[2023-08-29T10:59:00.424] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T10:59:00.452] [INFO] default - POST /news
+[2023-08-29T10:59:00.496] [INFO] default - PUT /news/64edf9a4eb065a7f1249ea7c
+[2023-08-29T10:59:00.528] [INFO] default - POST /news
+[2023-08-29T10:59:00.570] [INFO] default - DELETE /news/64edf9a4eb065a7f1249ea81
+[2023-08-29T10:59:00.591] [INFO] default - GET /news/64edf9a4eb065a7f1249ea81
+[2023-08-29T11:04:03.585] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T11:04:03.632] [INFO] default - Conectado a MongoDB!
+[2023-08-29T11:04:03.713] [INFO] default - POST /news
+[2023-08-29T11:04:03.803] [INFO] default - POST /news
+[2023-08-29T11:04:03.851] [INFO] default - GET /news
+[2023-08-29T11:04:03.891] [INFO] default - POST /news
+[2023-08-29T11:04:03.932] [INFO] default - GET /news/64edfad393a4ecd85f8c4497
+[2023-08-29T11:04:03.954] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T11:04:03.978] [INFO] default - POST /news
+[2023-08-29T11:04:04.022] [INFO] default - PUT /news/64edfad393a4ecd85f8c449c
+[2023-08-29T11:04:04.063] [INFO] default - POST /news
+[2023-08-29T11:04:04.105] [INFO] default - DELETE /news/64edfad493a4ecd85f8c44a1
+[2023-08-29T11:04:04.127] [INFO] default - GET /news/64edfad493a4ecd85f8c44a1
+[2023-08-29T11:07:10.600] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T11:07:10.654] [INFO] default - Conectado a MongoDB!
+[2023-08-29T11:07:10.744] [INFO] default - POST /news
+[2023-08-29T11:07:10.833] [INFO] default - POST /news
+[2023-08-29T11:07:10.885] [INFO] default - GET /news
+[2023-08-29T11:07:10.930] [INFO] default - POST /news
+[2023-08-29T11:07:10.975] [INFO] default - GET /news/64edfb8e6334b836e5501d9e
+[2023-08-29T11:07:10.996] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T11:07:11.024] [INFO] default - POST /news
+[2023-08-29T11:07:11.074] [INFO] default - PUT /news/64edfb8f6334b836e5501da3
+[2023-08-29T11:07:11.109] [INFO] default - POST /news
+[2023-08-29T11:07:11.154] [INFO] default - DELETE /news/64edfb8f6334b836e5501da8
+[2023-08-29T11:07:11.176] [INFO] default - GET /news/64edfb8f6334b836e5501da8
+[2023-08-29T11:23:13.221] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T11:23:13.269] [INFO] default - Conectado a MongoDB!
+[2023-08-29T11:24:54.966] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T11:24:55.043] [INFO] default - Conectado a MongoDB!
+[2023-08-29T11:24:59.471] [INFO] default - GET /news
+[2023-08-29T11:26:47.248] [INFO] default - GET /news
+[2023-08-29T11:28:39.227] [INFO] default - GET /news
+[2023-08-29T11:34:09.826] [INFO] default - POST /news
+[2023-08-29T11:37:41.512] [INFO] default - POST /news
+[2023-08-29T13:36:36.804] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T13:36:36.865] [INFO] default - Conectado a MongoDB!
+[2023-08-29T13:36:43.687] [INFO] default - POST /news
+[2023-08-29T13:37:45.752] [INFO] default - POST /news
+[2023-08-29T14:57:50.664] [INFO] default - POST /news
+[2023-08-29T15:15:46.714] [INFO] default - POST /news
+[2023-08-29T15:15:46.750] [INFO] default - GET /news
+[2023-08-29T15:17:39.725] [INFO] default - GET /news
+[2023-08-29T15:17:39.801] [INFO] default - POST /news
+[2023-08-29T15:18:06.997] [INFO] default - GET /news
+[2023-08-29T15:18:07.036] [INFO] default - POST /news
+[2023-08-29T15:18:07.073] [INFO] default - GET /news
+[2023-08-29T15:18:07.097] [INFO] default - POST /news
+[2023-08-29T15:18:28.879] [INFO] default - GET /news
+[2023-08-29T15:18:28.922] [INFO] default - POST /news
+[2023-08-29T15:21:11.068] [INFO] default - GET /news
+[2023-08-29T15:21:11.098] [INFO] default - POST /news
+[2023-08-29T15:21:11.158] [INFO] default - GET /news
+[2023-08-29T15:21:11.174] [INFO] default - POST /news
+[2023-08-29T15:33:36.789] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T15:33:36.839] [INFO] default - Conectado a MongoDB!
+[2023-08-29T15:34:25.352] [INFO] default - GET /news
+[2023-08-29T15:34:25.648] [INFO] default - POST /news
+[2023-08-29T15:34:25.710] [INFO] default - GET /news
+[2023-08-29T15:34:25.740] [INFO] default - POST /news
+[2023-08-29T15:39:43.163] [INFO] default - GET /news
+[2023-08-29T15:39:43.211] [INFO] default - POST /news
+[2023-08-29T15:39:43.230] [INFO] default - POST /news
+[2023-08-29T15:39:43.243] [INFO] default - GET /news/64ee3b6f91382a4d8ac8c824
+[2023-08-29T15:39:57.322] [INFO] default - GET /news
+[2023-08-29T15:39:57.353] [INFO] default - POST /news
+[2023-08-29T15:39:57.407] [INFO] default - GET /news
+[2023-08-29T15:39:57.421] [INFO] default - POST /news
+[2023-08-29T15:39:57.436] [INFO] default - POST /news
+[2023-08-29T15:39:57.448] [INFO] default - GET /news/64ee3b7d91382a4d8ac8c82d
+[2023-08-29T15:40:43.689] [INFO] default - GET /news
+[2023-08-29T15:40:43.730] [INFO] default - POST /news
+[2023-08-29T15:40:43.772] [INFO] default - GET /news
+[2023-08-29T15:40:43.789] [INFO] default - POST /news
+[2023-08-29T15:40:43.805] [INFO] default - POST /news
+[2023-08-29T15:40:43.817] [INFO] default - GET /news/64ee3bab91382a4d8ac8c836
+[2023-08-29T15:50:39.367] [INFO] default - GET /news
+[2023-08-29T15:50:39.412] [INFO] default - POST /news
+[2023-08-29T15:50:58.809] [INFO] default - GET /news
+[2023-08-29T15:50:58.841] [INFO] default - POST /news
+[2023-08-29T15:50:58.883] [INFO] default - GET /news
+[2023-08-29T15:51:08.924] [INFO] default - POST /news
+[2023-08-29T15:51:18.955] [INFO] default - POST /news
+[2023-08-29T15:51:18.967] [INFO] default - GET /news/64ee3e2691382a4d8ac8c842
+[2023-08-29T15:51:57.428] [INFO] default - GET /news
+[2023-08-29T15:51:57.463] [INFO] default - POST /news
+[2023-08-29T15:51:57.508] [INFO] default - GET /news
+[2023-08-29T15:52:07.546] [INFO] default - POST /news
+[2023-08-29T15:52:17.568] [INFO] default - POST /news
+[2023-08-29T15:52:17.580] [INFO] default - GET /news/64ee3e6191382a4d8ac8c84b
+[2023-08-29T15:54:21.854] [INFO] default - GET /news
+[2023-08-29T15:54:21.886] [INFO] default - POST /news
+[2023-08-29T15:54:21.951] [INFO] default - GET /news
+[2023-08-29T15:54:21.970] [INFO] default - POST /news
+[2023-08-29T15:54:21.985] [INFO] default - POST /news
+[2023-08-29T15:54:21.996] [INFO] default - GET /news/64ee3edd91382a4d8ac8c854
+[2023-08-29T15:54:34.867] [INFO] default - GET /news
+[2023-08-29T15:54:34.909] [INFO] default - POST /news
+[2023-08-29T15:54:34.941] [INFO] default - GET /news
+[2023-08-29T15:54:34.964] [INFO] default - POST /news
+[2023-08-29T15:54:34.982] [INFO] default - POST /news
+[2023-08-29T15:54:34.995] [INFO] default - GET /news/64ee3eea91382a4d8ac8c85d
+[2023-08-29T15:55:33.138] [INFO] default - GET /news
+[2023-08-29T15:55:33.168] [INFO] default - POST /news
+[2023-08-29T15:55:33.201] [INFO] default - GET /news
+[2023-08-29T15:55:43.240] [INFO] default - POST /news
+[2023-08-29T15:55:53.272] [INFO] default - POST /news
+[2023-08-29T15:55:53.284] [INFO] default - GET /news/64ee3f3991382a4d8ac8c866
+[2023-08-29T15:57:39.539] [INFO] default - GET /news
+[2023-08-29T15:57:39.570] [INFO] default - POST /news
+[2023-08-29T15:57:39.613] [INFO] default - GET /news
+[2023-08-29T15:57:39.628] [INFO] default - POST /news
+[2023-08-29T15:57:39.643] [INFO] default - POST /news
+[2023-08-29T15:57:39.654] [INFO] default - GET /news/64ee3fa391382a4d8ac8c86f
+[2023-08-29T15:58:37.319] [INFO] default - GET /news
+[2023-08-29T15:58:37.355] [INFO] default - POST /news
+[2023-08-29T15:58:37.390] [INFO] default - GET /news
+[2023-08-29T15:58:37.405] [INFO] default - POST /news
+[2023-08-29T15:58:37.418] [INFO] default - POST /news
+[2023-08-29T15:58:37.428] [INFO] default - GET /news/64ee3fdd91382a4d8ac8c878
+[2023-08-29T15:59:34.400] [INFO] default - GET /news
+[2023-08-29T15:59:34.446] [INFO] default - POST /news
+[2023-08-29T15:59:34.462] [INFO] default - POST /news
+[2023-08-29T15:59:34.473] [INFO] default - GET /news/64ee401691382a4d8ac8c87e
+[2023-08-29T15:59:56.294] [INFO] default - GET /news
+[2023-08-29T15:59:56.325] [INFO] default - POST /news
+[2023-08-29T15:59:56.371] [INFO] default - GET /news
+[2023-08-29T15:59:56.385] [INFO] default - POST /news
+[2023-08-29T15:59:56.397] [INFO] default - POST /news
+[2023-08-29T15:59:56.406] [INFO] default - GET /news/64ee402c91382a4d8ac8c887
+[2023-08-29T16:13:09.563] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:13:09.611] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:13:15.055] [INFO] default - DELETE /news
+[2023-08-29T16:13:15.062] [FATAL] default - CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"{ _id: undefined }"',
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12),
+  valueType: 'Object'
+}
+[2023-08-29T16:13:15.096] [INFO] default - GET /news
+[2023-08-29T16:13:15.175] [INFO] default - POST /news
+[2023-08-29T16:13:15.203] [INFO] default - POST /news
+[2023-08-29T16:13:15.215] [INFO] default - GET /news/64ee434bad5312c737b9f7dd
+[2023-08-29T16:14:40.100] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:14:40.147] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:15:22.503] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:15:22.553] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:16:44.369] [INFO] default - DELETE /news/all
+[2023-08-29T16:16:44.377] [FATAL] default - CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"{ _id: undefined }"',
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12),
+  valueType: 'Object'
+}
+[2023-08-29T16:17:02.903] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:17:02.953] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:17:21.396] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:17:21.449] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:17:23.128] [INFO] default - DELETE /news/all
+[2023-08-29T16:17:32.688] [INFO] default - DELETE /news
+[2023-08-29T16:17:32.697] [FATAL] default - CastError: Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "News"
+    at model.Query.exec (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:4921:21)
+    at Query.then (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5020:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  messageFormat: undefined,
+  stringValue: '"{ _id: undefined }"',
+  kind: 'ObjectId',
+  value: { _id: undefined },
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\error.js:41:28)
+      at new ObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\bson\lib\objectid.js:67:23)
+      at castObjectId (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast\objectid.js:25:12)
+      at ObjectId.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schema\objectid.js:246:12)
+      at SchemaType.applySetters (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1201:12)
+      at SchemaType._castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1649:15)
+      at SchemaType.castForQuery (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1637:15)
+      at SchemaType.castForQueryWrapper (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\schematype.js:1613:20)
+      at cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\cast.js:286:34)
+      at Query.cast (D:\CODERHOUSE\BACKEND\PLANIFICACION CLASES\CONTENIDO NUEVO\42 - TESTING AVANZADO\01-supertest-crud-news\node_modules\mongoose\lib\query.js:5351:12),
+  valueType: 'Object'
+}
+[2023-08-29T16:18:13.244] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2023-08-29T16:18:13.289] [INFO] default - Conectado a MongoDB!
+[2023-08-29T16:18:15.852] [INFO] default - DELETE /news
+[2023-08-29T16:19:11.413] [INFO] default - GET /news
+[2023-08-29T16:19:11.482] [INFO] default - POST /news
+[2023-08-29T16:19:11.517] [INFO] default - GET /news
+[2023-08-29T16:19:11.541] [INFO] default - DELETE /news
+[2023-08-29T16:19:11.553] [INFO] default - POST /news
+[2023-08-29T16:19:11.567] [INFO] default - DELETE /news
+[2023-08-29T16:19:11.578] [INFO] default - POST /news
+[2023-08-29T16:19:11.590] [INFO] default - GET /news/64ee44af6585014d48e8675a
+[2023-08-29T16:20:23.784] [INFO] default - DELETE /news
+[2023-08-29T16:20:28.411] [INFO] default - GET /news
+[2023-08-29T16:20:28.443] [INFO] default - POST /news
+[2023-08-29T16:20:28.455] [INFO] default - GET /news
+[2023-08-29T16:20:28.467] [INFO] default - DELETE /news
+[2023-08-29T16:20:28.480] [INFO] default - POST /news
+[2023-08-29T16:20:28.491] [INFO] default - DELETE /news
+[2023-08-29T16:20:28.503] [INFO] default - POST /news
+[2023-08-29T16:20:28.512] [INFO] default - GET /news/64ee44fc6585014d48e86766
+[2023-08-29T16:22:37.689] [INFO] default - GET /news
+[2023-08-29T16:22:37.730] [INFO] default - POST /news
+[2023-08-29T16:22:37.742] [INFO] default - DELETE /news
+[2023-08-29T16:22:37.753] [INFO] default - POST /news
+[2023-08-29T16:22:37.764] [INFO] default - GET /news/64ee457d6585014d48e8676d
+[2023-08-29T16:23:28.265] [INFO] default - DELETE /news
+[2023-08-29T16:23:28.282] [INFO] default - GET /news
+[2023-08-29T16:23:28.302] [INFO] default - POST /news
+[2023-08-29T16:23:28.314] [INFO] default - GET /news
+[2023-08-29T16:23:28.326] [INFO] default - DELETE /news
+[2023-08-29T16:23:28.336] [INFO] default - POST /news
+[2023-08-29T16:23:28.347] [INFO] default - DELETE /news
+[2023-08-29T16:23:28.357] [INFO] default - POST /news
+[2023-08-29T16:23:28.366] [INFO] default - GET /news/64ee45b06585014d48e86779
+[2023-08-29T16:35:48.528] [INFO] default - DELETE /news
+[2023-08-29T16:35:48.552] [INFO] default - GET /news
+[2023-08-29T16:35:48.576] [INFO] default - POST /news
+[2023-08-29T16:35:48.589] [INFO] default - GET /news
+[2023-08-29T16:35:48.605] [INFO] default - DELETE /news
+[2023-08-29T16:35:48.616] [INFO] default - POST /news
+[2023-08-29T16:35:48.628] [INFO] default - DELETE /news
+[2023-08-29T16:35:48.641] [INFO] default - POST /news
+[2023-08-29T16:35:48.652] [INFO] default - GET /news/64ee48946585014d48e86785
+[2023-08-29T16:35:48.666] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:27:31.787] [INFO] default - DELETE /news
+[2023-08-29T17:27:31.819] [INFO] default - GET /news
+[2023-08-29T17:27:31.839] [INFO] default - POST /news
+[2023-08-29T17:27:31.850] [INFO] default - GET /news
+[2023-08-29T17:27:31.861] [INFO] default - DELETE /news
+[2023-08-29T17:27:31.870] [INFO] default - POST /news
+[2023-08-29T17:27:31.880] [INFO] default - DELETE /news
+[2023-08-29T17:27:31.889] [INFO] default - POST /news
+[2023-08-29T17:27:31.899] [INFO] default - GET /news/64ee54b36585014d48e86792
+[2023-08-29T17:27:31.911] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:33:43.252] [INFO] default - DELETE /news
+[2023-08-29T17:33:43.272] [INFO] default - GET /news
+[2023-08-29T17:33:43.293] [INFO] default - POST /news
+[2023-08-29T17:33:43.302] [INFO] default - GET /news
+[2023-08-29T17:33:43.313] [INFO] default - DELETE /news
+[2023-08-29T17:33:43.323] [INFO] default - POST /news
+[2023-08-29T17:33:43.332] [INFO] default - DELETE /news
+[2023-08-29T17:33:43.342] [INFO] default - POST /news
+[2023-08-29T17:33:43.350] [INFO] default - GET /news/64ee56276585014d48e8679f
+[2023-08-29T17:33:43.361] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:33:43.372] [INFO] default - DELETE /news
+[2023-08-29T17:33:43.379] [INFO] default - POST /news
+[2023-08-29T17:33:43.390] [INFO] default - PUT /news/64ee56276585014d48e867a4
+[2023-08-29T17:39:46.326] [INFO] default - DELETE /news
+[2023-08-29T17:39:46.350] [INFO] default - GET /news
+[2023-08-29T17:39:46.373] [INFO] default - POST /news
+[2023-08-29T17:39:46.384] [INFO] default - GET /news
+[2023-08-29T17:39:46.399] [INFO] default - DELETE /news
+[2023-08-29T17:39:46.409] [INFO] default - POST /news
+[2023-08-29T17:39:46.422] [INFO] default - DELETE /news
+[2023-08-29T17:39:46.431] [INFO] default - POST /news
+[2023-08-29T17:39:46.441] [INFO] default - GET /news/64ee57926585014d48e867b1
+[2023-08-29T17:39:46.453] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:39:46.463] [INFO] default - DELETE /news
+[2023-08-29T17:39:46.474] [INFO] default - POST /news
+[2023-08-29T17:39:46.487] [INFO] default - PUT /news/64ee57926585014d48e867b6
+[2023-08-29T17:39:46.502] [INFO] default - DELETE /news
+[2023-08-29T17:39:46.513] [INFO] default - POST /news
+[2023-08-29T17:39:46.525] [INFO] default - GET /news/id/64ee57926585014d48e867bb
+[2023-08-29T17:40:53.982] [INFO] default - DELETE /news
+[2023-08-29T17:40:54.004] [INFO] default - GET /news
+[2023-08-29T17:40:54.024] [INFO] default - POST /news
+[2023-08-29T17:40:54.033] [INFO] default - GET /news
+[2023-08-29T17:40:54.044] [INFO] default - DELETE /news
+[2023-08-29T17:40:54.052] [INFO] default - POST /news
+[2023-08-29T17:40:54.061] [INFO] default - DELETE /news
+[2023-08-29T17:40:54.071] [INFO] default - POST /news
+[2023-08-29T17:40:54.080] [INFO] default - GET /news/64ee57d66585014d48e867c6
+[2023-08-29T17:40:54.089] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:40:54.098] [INFO] default - DELETE /news
+[2023-08-29T17:40:54.106] [INFO] default - POST /news
+[2023-08-29T17:40:54.117] [INFO] default - PUT /news/64ee57d66585014d48e867cb
+[2023-08-29T17:40:54.129] [INFO] default - DELETE /news
+[2023-08-29T17:40:54.138] [INFO] default - POST /news
+[2023-08-29T17:40:54.147] [INFO] default - GET /news/id/64ee57d66585014d48e867d0
+[2023-08-29T17:42:49.641] [INFO] default - DELETE /news
+[2023-08-29T17:42:49.661] [INFO] default - GET /news
+[2023-08-29T17:42:49.681] [INFO] default - POST /news
+[2023-08-29T17:42:49.691] [INFO] default - GET /news
+[2023-08-29T17:42:49.703] [INFO] default - DELETE /news
+[2023-08-29T17:42:49.712] [INFO] default - POST /news
+[2023-08-29T17:42:49.722] [INFO] default - DELETE /news
+[2023-08-29T17:42:49.730] [INFO] default - POST /news
+[2023-08-29T17:42:49.740] [INFO] default - GET /news/64ee58496585014d48e867db
+[2023-08-29T17:42:49.750] [INFO] default - GET /news/507f191e810c19729de860ea
+[2023-08-29T17:42:49.759] [INFO] default - DELETE /news
+[2023-08-29T17:42:49.766] [INFO] default - POST /news
+[2023-08-29T17:42:49.777] [INFO] default - PUT /news/64ee58496585014d48e867e0
+[2023-08-29T17:42:49.793] [INFO] default - DELETE /news
+[2023-08-29T17:42:49.802] [INFO] default - POST /news
+[2023-08-29T17:42:49.813] [INFO] default - DELETE /news/id/64ee58496585014d48e867e5
+[2023-08-29T17:42:49.825] [INFO] default - GET /news/64ee58496585014d48e867e5
+[2024-02-27T21:00:54.652] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:00:54.728] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:00:54.832] [INFO] default - POST /news
+[2024-02-27T21:02:16.846] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:02:16.917] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:02:17.052] [INFO] default - POST /news
+[2024-02-27T21:10:05.656] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:10:05.706] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:10:05.816] [INFO] default - POST /news
+[2024-02-27T21:20:37.420] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:20:37.492] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:20:37.605] [INFO] default - POST /news
+[2024-02-27T21:20:37.676] [INFO] default - GET /news
+[2024-02-27T21:29:30.167] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:29:30.239] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:29:30.347] [INFO] default - POST /news
+[2024-02-27T21:29:30.422] [INFO] default - GET /news
+[2024-02-27T21:29:30.513] [INFO] default - POST /news
+[2024-02-27T21:30:45.836] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:30:45.895] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:30:45.998] [INFO] default - POST /news
+[2024-02-27T21:30:46.072] [INFO] default - GET /news
+[2024-02-27T21:30:46.139] [INFO] default - POST /news
+[2024-02-27T21:30:46.162] [INFO] default - GET /news/65de7eb6b2edd65afbedaf4f
+[2024-02-27T21:32:31.514] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:32:31.575] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:32:31.662] [INFO] default - POST /news
+[2024-02-27T21:32:31.728] [INFO] default - GET /news
+[2024-02-27T21:32:31.772] [INFO] default - POST /news
+[2024-02-27T21:32:31.801] [INFO] default - GET /news/65de7f1f3fd033f11d434acb
+[2024-02-27T21:38:37.741] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:38:37.802] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:38:37.927] [INFO] default - POST /news
+[2024-02-27T21:38:37.997] [INFO] default - GET /news
+[2024-02-27T21:38:38.052] [INFO] default - POST /news
+[2024-02-27T21:38:38.080] [INFO] default - GET /news/65de808e7ef9a1af6752e9a6
+[2024-02-27T21:38:38.107] [INFO] default - GET /news/10de7f1f3fd033f11d434acb
+[2024-02-27T21:50:03.033] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:50:03.092] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:50:03.213] [INFO] default - POST /news
+[2024-02-27T21:50:03.277] [INFO] default - GET /news
+[2024-02-27T21:50:03.327] [INFO] default - POST /news
+[2024-02-27T21:50:03.355] [INFO] default - GET /news/65de833b5978c2a13f431ebe
+[2024-02-27T21:50:03.374] [INFO] default - GET /news/10de7f1f3fd033f11d434acb
+[2024-02-27T21:50:03.394] [INFO] default - POST /news
+[2024-02-27T21:50:03.410] [INFO] default - PUT /news/65de833b5978c2a13f431ec2
+[2024-02-27T21:50:03.459] [INFO] default - POST /news
+[2024-02-27T21:50:03.486] [INFO] default - DELETE /news/id/65de833b5978c2a13f431ec6
+[2024-02-27T21:50:03.508] [INFO] default - GET /news/65de833b5978c2a13f431ec6
+[2024-02-27T21:50:54.160] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:50:54.225] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:50:54.326] [INFO] default - POST /news
+[2024-02-27T21:50:54.399] [INFO] default - GET /news
+[2024-02-27T21:50:54.450] [INFO] default - POST /news
+[2024-02-27T21:50:54.482] [INFO] default - GET /news/65de836e6efc2c96bca28dc4
+[2024-02-27T21:50:54.502] [INFO] default - GET /news/10de7f1f3fd033f11d434acb
+[2024-02-27T21:50:54.525] [INFO] default - POST /news
+[2024-02-27T21:50:54.551] [INFO] default - PUT /news/65de836e6efc2c96bca28dc8
+[2024-02-27T21:50:54.684] [INFO] default - POST /news
+[2024-02-27T21:50:54.733] [INFO] default - DELETE /news/id/65de836e6efc2c96bca28dcc
+[2024-02-27T21:50:54.755] [INFO] default - GET /news/65de836e6efc2c96bca28dcc
+[2024-02-27T21:51:33.322] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T21:51:33.381] [INFO] default - Conectado a MongoDB!
+[2024-02-27T21:51:33.529] [INFO] default - POST /news
+[2024-02-27T21:51:33.608] [INFO] default - GET /news
+[2024-02-27T21:51:33.652] [INFO] default - POST /news
+[2024-02-27T21:51:33.675] [INFO] default - GET /news/65de83952f3287e67e0c41a2
+[2024-02-27T21:51:33.695] [INFO] default - GET /news/10de7f1f3fd033f11d434acb
+[2024-02-27T21:51:33.719] [INFO] default - POST /news
+[2024-02-27T21:51:33.739] [INFO] default - PUT /news/65de83952f3287e67e0c41a6
+[2024-02-27T21:51:33.837] [INFO] default - POST /news
+[2024-02-27T21:51:33.860] [INFO] default - DELETE /news/id/65de83952f3287e67e0c41aa
+[2024-02-27T21:51:33.886] [INFO] default - GET /news/65de83952f3287e67e0c41aa

@@ -1,0 +1,29 @@
+components:
+  parameters:
+    schemas:
+   
+      BodyNewsPost: 
+        type: object 
+        required:    
+          - title
+          - body
+          - author
+          - image
+        properties:   
+          title:
+            type: string
+            description: Título de la noticia.  
+          body:
+            type: string
+            description: Cuerpo de la noticia.
+          author:
+            type: string
+            description: Autor de la noticia.
+          image:
+            type: string
+            description: Imagen de la noticia.
+        example:
+          title: ¡Argentina Campeón del mundo!
+          body: Argentina se consagró campeón del mundo tras vencer por penales a Francia.
+          author: Gonzalo Bonadeo
+          image: http://dfsdfs.com/fsdf.jpg
