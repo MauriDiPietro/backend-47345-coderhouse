@@ -1853,3 +1853,97 @@
 [2024-02-27T21:51:33.837] [INFO] default - POST /news
 [2024-02-27T21:51:33.860] [INFO] default - DELETE /news/id/65de83952f3287e67e0c41aa
 [2024-02-27T21:51:33.886] [INFO] default - GET /news/65de83952f3287e67e0c41aa
+[2024-02-27T22:02:30.049] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T22:02:59.294] [FATAL] default - MongooseServerSelectionError: connect ECONNREFUSED ::1:27017
+    at Connection.openUri (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\connection.js:825:32)
+    at D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\index.js:414:10
+    at promiseOrCallback (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\helpers\promiseOrCallback.js:11:14)
+    at Mongoose._promiseOrCallback (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\index.js:1290:10)
+    at Mongoose.connect (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\index.js:413:20)
+    at DaoMongo.init (file:///D:/CODERHOUSE/BACKEND/backend-47345-coderhouse/42%20-%20TESTING%20AVANZADO/01-crud-news/src/persistence/DAOS/mongo/news.mongo.dao.js:10:18)
+    at file:///D:/CODERHOUSE/BACKEND/backend-47345-coderhouse/42%20-%20TESTING%20AVANZADO/01-crud-news/src/persistence/DAOS/news.factory.js:13:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:193:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:530:24) {
+  reason: TopologyDescription {
+    type: 'Unknown',
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined
+}
+[2024-02-27T22:03:07.871] [INFO] default - DELETE /news
+[2024-02-27T22:03:17.884] [FATAL] default - MongooseError: Operation `news.deleteMany()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:188:23)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[2024-02-27T22:03:17.926] [INFO] default - GET /news
+[2024-02-27T22:03:27.944] [FATAL] default - MongooseError: Operation `news.find()` buffering timed out after 10000ms
+    at Timeout._onTimeout (D:\CODERHOUSE\BACKEND\backend-47345-coderhouse\42 - TESTING AVANZADO\01-crud-news\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:188:23)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[2024-02-27T22:03:27.968] [INFO] default - DELETE /news
+[2024-02-27T22:03:39.356] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T22:04:04.065] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T22:04:04.114] [INFO] default - Conectado a MongoDB!
+[2024-02-27T22:04:10.327] [INFO] default - DELETE /news
+[2024-02-27T22:04:10.369] [INFO] default - GET /news
+[2024-02-27T22:04:10.421] [INFO] default - POST /news
+[2024-02-27T22:04:10.451] [INFO] default - GET /news
+[2024-02-27T22:04:10.551] [INFO] default - DELETE /news
+[2024-02-27T22:04:10.562] [INFO] default - POST /news
+[2024-02-27T22:04:10.576] [INFO] default - DELETE /news
+[2024-02-27T22:04:10.587] [INFO] default - POST /news
+[2024-02-27T22:04:10.599] [INFO] default - GET /news/65de868a3f36019b34d12d54
+[2024-02-27T22:04:10.615] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-02-27T22:04:10.629] [INFO] default - DELETE /news
+[2024-02-27T22:04:10.638] [INFO] default - POST /news
+[2024-02-27T22:04:10.652] [INFO] default - PUT /news/65de868a3f36019b34d12d59
+[2024-02-27T22:04:10.678] [INFO] default - DELETE /news
+[2024-02-27T22:04:10.688] [INFO] default - POST /news
+[2024-02-27T22:04:10.700] [INFO] default - DELETE /news/id/65de868a3f36019b34d12d5e
+[2024-02-27T22:04:10.714] [INFO] default - GET /news/65de868a3f36019b34d12d5e
+[2024-02-27T22:05:18.338] [INFO] default - DELETE /news
+[2024-02-27T22:05:18.366] [INFO] default - GET /news
+[2024-02-27T22:05:18.386] [INFO] default - POST /news
+[2024-02-27T22:05:18.400] [INFO] default - GET /news
+[2024-02-27T22:05:18.416] [INFO] default - DELETE /news
+[2024-02-27T22:05:18.429] [INFO] default - POST /news
+[2024-02-27T22:05:18.445] [INFO] default - DELETE /news
+[2024-02-27T22:05:18.456] [INFO] default - POST /news
+[2024-02-27T22:05:18.467] [INFO] default - GET /news/65de86ce3f36019b34d12d6b
+[2024-02-27T22:05:18.478] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-02-27T22:05:18.490] [INFO] default - DELETE /news
+[2024-02-27T22:05:18.500] [INFO] default - POST /news
+[2024-02-27T22:05:18.512] [INFO] default - PUT /news/65de86ce3f36019b34d12d70
+[2024-02-27T22:05:18.531] [INFO] default - DELETE /news
+[2024-02-27T22:05:18.542] [INFO] default - POST /news
+[2024-02-27T22:05:18.554] [INFO] default - DELETE /news/id/65de86ce3f36019b34d12d75
+[2024-02-27T22:05:18.568] [INFO] default - GET /news/65de86ce3f36019b34d12d75
+[2024-02-27T22:19:54.290] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2024-02-27T22:19:54.342] [INFO] default - Conectado a MongoDB!
+[2024-02-27T22:20:19.405] [INFO] default - DELETE /news
+[2024-02-27T22:20:19.452] [INFO] default - GET /news
+[2024-02-27T22:20:19.501] [INFO] default - POST /news
+[2024-02-27T22:20:19.533] [INFO] default - GET /news
+[2024-02-27T22:20:19.566] [INFO] default - DELETE /news
+[2024-02-27T22:20:19.578] [INFO] default - POST /news
+[2024-02-27T22:20:19.598] [INFO] default - DELETE /news
+[2024-02-27T22:20:19.615] [INFO] default - POST /news
+[2024-02-27T22:20:19.630] [INFO] default - GET /news/65de8a532acc3e9f682799f0
+[2024-02-27T22:20:19.645] [INFO] default - GET /news/507f191e810c19729de860ea
+[2024-02-27T22:20:19.659] [INFO] default - DELETE /news
+[2024-02-27T22:20:19.668] [INFO] default - POST /news
+[2024-02-27T22:20:19.682] [INFO] default - PUT /news/65de8a532acc3e9f682799f5
+[2024-02-27T22:20:19.709] [INFO] default - DELETE /news
+[2024-02-27T22:20:19.717] [INFO] default - POST /news
+[2024-02-27T22:20:19.731] [INFO] default - DELETE /news/id/65de8a532acc3e9f682799fa
+[2024-02-27T22:20:19.743] [INFO] default - GET /news/65de8a532acc3e9f682799fa
